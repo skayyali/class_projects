@@ -1,0 +1,79 @@
+#include <sys/types.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+ * Implement the following string procedures.
+ *
+ * Type "man strstr" to find what each of the functions should do.
+ *
+ * For example, mystrcpy should do the same as strcpy.
+ *
+ * IMPORTANT: DO NOT use predefined string functions.
+ */
+
+char *mystrcpy(char * s1, const char * s2)
+{
+  /* Complete procedure */
+	int i=0;
+	while(s2[i] != NULL){
+		s1[i]=s2[i];
+		i++;
+	}
+	s1[i]=s2[i];
+}
+
+size_t mystrlen(const char *s)
+{
+  /* Complete procedure */
+	int i=0;
+	while(s[i]!=NULL){
+		i++;
+	}
+	return i;
+}
+
+char *mystrdup(const char *s1)
+{
+  /* Complete procedure */
+	int i=0;
+	while (s1[i] != NULL);
+		i++;
+	}
+	char *s2 = (char *)malloc(i+1);
+	int j=0;
+	while(j<i+1){
+		s2[i]=s1[i];
+	}
+	return *s2;
+}
+
+char *mystrcat(char * s1, const char * s2)
+{
+  /* Complete procedure */
+	int i=0;
+	while(s1[i] != NULL){
+		i++;
+	}
+	i++;
+	int j=0;
+	while(s2[j] != NULL){
+		s1[i]=s2[j];
+		j++;
+		i++;
+	}
+	s1[i]=s2[j];
+	
+}
+
+char *mystrstr(char * s1, const char * s2)
+{
+  /* Complete procedure */
+	int i=0;
+	
+}
+
+int mystrcmp(const char *s1, const char *s2) {
+  /* Complete procedure */
+}
+

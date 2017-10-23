@@ -1,0 +1,5 @@
+Said Kayyali
+I did not complete part 2 (Unique tables), and in my part 3, it takes a very very long time to process rand6+, however, I looked over my
+code and I did not find the problem... My symbol.cc processed rand5 just fine, and my code worked when I hard coded input to test it,
+It just takes too long when I input everything, I think it is because the total number of combinations that need to be tested are
+2 to the power of (# of bits) this incrases the time taken exponentially even when the subset has been precomputed.

@@ -1,0 +1,23 @@
+
+
+ls -al | grep "word" > output.txt
+goal
+commands
+command
+simple_command
+pipe_list iomodifier_list background NEWLINE
+pipe_list PIPE command_and_args iomodifier_list background NEWLINE
+command_and_args PIPE command_and_args iomodifier_list background NEWLINE
+command_word arg_list PIPE command_word arg_list iomodifier_list background NEWLINE
+command_word arg_list PIPE command_word arg_list iomodifier_opt background NEWLINE
+command_word arg_list PIPE command_word arg_list iomodifier_opt NEWLINE
+ls arg_list PIPE command_word arg_list iomodifier_list background NEWLINE
+ls -al PIPE command_word arg_list iomodifier_list background NEWLINE
+ls -al PIPE grep "word" iomodifier_list background NEWLINE
+ls -al PIPE grep "word" iomodifier_opt background NEWLINE
+ls -al PIPE grep "word" > output.txt background NEWLINE
+ls -al PIPE grep "word" > output.txt NEWLINE
+ls -al | grep "word" > output.txt
+
+ls -al grep "word" > output.txt
+command_word argument argument argument iomodifier_list NEWLINE

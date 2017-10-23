@@ -1,0 +1,47 @@
+(B)
+
+Primes between 10e9 and 10e9+10e6:
+					{P < sqrt(J)}
+First 5:
+	1. : 1000000007
+	2. : 1000000009
+	3. : 1000000021
+	4. : 1000000033
+	5. : 1000000087
+
+Last 5:
+	48151. : 1000999877
+	48152. : 1000999913
+	48153. : 1000999927
+	48154. : 1000999943
+	48155. : 1000999949
+
+count: 48155
+Run time (While printing entire list): 559ms
+Run time (Not printing list, just calculating number of primes): 77-86ms
+Approximation: 45925.35144069046
+
+***************************************************************************************************
+(C)
+
+Primes between 10e9 and 10e9+10e6:
+					{P < 1000}
+First 5:
+	1. : 1000000007
+	2. : 1000000009
+	3. : 1000000013
+	4. : 1000000021
+	5. : 1000000033
+Last 5:
+	81385. : 1000999943
+	81386. : 1000999949
+	81387. : 1000999957
+	81388. : 1000999963
+	81389. : 1000999969
+
+count: 81389
+Run time (While printing entire list): 637ms
+Run time (Not printing list, just calculating number of primes): 74-81ms
+
+
+All primes seem to be in the list but there are also composite numbers that are not crossed out. The algorithm does not work correctly.

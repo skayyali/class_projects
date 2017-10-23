@@ -1,0 +1,12 @@
+INSERT INTO Employee VALUES (5, 'test0', 3, 47910);
+INSERT INTO Employee VALUES (6, 'test1', 3, 47910);
+INSERT INTO Employee VALUES (7, 'test2', 3, 47910);
+
+INSERT INTO Graduate VALUES (5, 3, 2001);
+INSERT INTO Graduate VALUES (6, 3, 2001);
+INSERT INTO Graduate VALUES (7, 3, 2001);
+
+INSERT INTO ProjectManager VALUES(3, 4, '30-MAY-12', NULL);
+/*INSERT INTO ProjectManager VALUES(3, 5, '30-MAY-12', NULL);
+/*INSERT INTO ProjectManager VALUES(3, 6, '30-MAY-12', NULL);
+/*INSERT INTO ProjectManager VALUES(3, 7, '30-MAY-12', NULL);*/

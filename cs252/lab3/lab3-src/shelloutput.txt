@@ -1,0 +1,191 @@
+Starting input: 12
+Starting output: 11
+Starting err: 13
+errFile: (null)
+_append: 0
+inputFile: (null)
+Number of simple commands: 2
+
+---------------------------------------
+Input: 12
+ Command: 0
+Making a pipe!
+Other side of pipe: 12
+Output FD: 13
+Calling: ls
+Argument: ls
+
+---------------------------------------
+Input: 12
+ Command: 1
+outFile: (null)
+_append: 0
+Output FD: 11
+Calling: echo
+Argument: echo
+Starting input: 12
+Starting output: 11
+Starting err: 13
+errFile: (null)
+_append: 0
+inputFile: (null)
+Number of simple commands: 1
+
+---------------------------------------
+Input: 12
+ Command: 0
+outFile: (null)
+_append: 0
+Output FD: 11
+Calling: Makefile
+Argument: Makefile
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found
+./Makefile: line 11: lex.yy.o:: command not found
+./Makefile: line 12: LEX: command not found
+./shell.l: line 2: /bin: Is a directory
+gcc: error: =: No such file or directory
+gcc: error: gcc: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+./Makefile: line 4: CC: command not found
+./Makefile: line 9: all:: command not found

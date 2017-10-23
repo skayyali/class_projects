@@ -1,0 +1,3 @@
+test_mystring OK
+test_list     OK
+test_mysort   Failed

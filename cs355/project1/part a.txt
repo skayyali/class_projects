@@ -1,0 +1,40 @@
+(A)
+
+Primes under 10e6:
+	First 5:
+		1. 2
+		2. 3
+		3. 5
+		4. 7
+		5. 11
+	
+	Last 5:
+		78494. 999953
+		78495. 999959
+		78496. 999961
+		78497. 999979
+		78498. 999983
+count: 78498
+Run time: 57-77ms
+
+****************************************************************************************************
+
+3^x:
+
+x:			number of primes:	Approximation:
+-------------------------------------------------------------------------------
+TOTAL PRIMES FOR 2 :	4			approx.: 4.096076519820768
+TOTAL PRIMES FOR 3 :	9			approx.: 8.192153039641536
+TOTAL PRIMES FOR 4 :	22			approx.: 18.432344339193456
+TOTAL PRIMES FOR 5 :	53			approx.: 44.2376264140643
+TOTAL PRIMES FOR 6 :	129			approx.: 110.59406603516074
+TOTAL PRIMES FOR 7 :	327			approx.: 284.38474123327046
+TOTAL PRIMES FOR 8 :	847			approx.: 746.509945737335
+TOTAL PRIMES FOR 9 :	2227			approx.: 1990.6931886328935
+TOTAL PRIMES FOR 10 :	5968			approx.: 5374.871609308812
+TOTAL PRIMES FOR 11 :	16097			approx.: 14658.740752660397
+TOTAL PRIMES FOR 12 :	43934			approx.: 40311.53706981609
+
+Run time: 58-83ms
+
+

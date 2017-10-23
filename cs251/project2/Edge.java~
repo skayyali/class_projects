@@ -1,0 +1,10 @@
+public class Edge {
+  public double start_x, start_y;
+  public double end_x, end_y;
+  public Point(double start_x, double start_y, double end_x, double end_y) { 
+    this.start_x = start_x;
+    this.start_y = start_y;
+    this.end_x = end_x;
+    this.end_y = end_y;
+  }
+}

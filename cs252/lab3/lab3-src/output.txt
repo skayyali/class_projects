@@ -1,0 +1,3483 @@
+==2283== Memcheck, a memory error detector
+==2283== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.
+==2283== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info
+==2283== Command: shell
+==2283== 
+myshell>==2283== Invalid write of size 2
+==2283==    at 0x40414D: expandWildcards(char*, char*) (shell.y:202)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e40 is 0 bytes inside a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x4C2D400: strncpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4041A7: expandWildcards(char*, char*) (shell.y:205)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e99 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042A8: expandWildcards(char*, char*) (shell.y:238)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e99 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042F9: expandWildcards(char*, char*) (shell.y:239)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e99 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404329: expandWildcards(char*, char*) (shell.y:241)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e99 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043AD: expandWildcards(char*, char*) (shell.y:245)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e41 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D1A3: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043E5: expandWildcards(char*, char*) (shell.y:246)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9e41 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x404433: expandWildcards(char*, char*) (shell.y:249)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9f88 is 2 bytes after a block of size 6 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043CB: expandWildcards(char*, char*) (shell.y:245)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 2
+==2283==    at 0x40414D: expandWildcards(char*, char*) (shell.y:202)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9fd4 is 4 bytes inside a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x4C2D400: strncpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4041A7: expandWildcards(char*, char*) (shell.y:205)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa025 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042A8: expandWildcards(char*, char*) (shell.y:238)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa025 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042F9: expandWildcards(char*, char*) (shell.y:239)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa025 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404329: expandWildcards(char*, char*) (shell.y:241)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa025 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043AD: expandWildcards(char*, char*) (shell.y:245)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9fd5 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D1A3: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043E5: expandWildcards(char*, char*) (shell.y:246)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f9fd5 is 0 bytes after a block of size 5 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x404433: expandWildcards(char*, char*) (shell.y:249)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa11c is 2 bytes after a block of size 10 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4043CB: expandWildcards(char*, char*) (shell.y:245)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 2
+==2283==    at 0x40414D: expandWildcards(char*, char*) (shell.y:202)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa168 is 8 bytes inside a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x4C2D400: strncpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4041A7: expandWildcards(char*, char*) (shell.y:205)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2CCC0: index (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404223: expandWildcards(char*, char*) (shell.y:224)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40423D: expandWildcards(char*, char*) (shell.y:227)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042A8: expandWildcards(char*, char*) (shell.y:238)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4042F9: expandWildcards(char*, char*) (shell.y:239)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404329: expandWildcards(char*, char*) (shell.y:241)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa1b1 is 0 bytes after a block of size 1 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404177: expandWildcards(char*, char*) (shell.y:204)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Syscall param openat(filename) points to unaddressable byte(s)
+==2283==    at 0x5726BD2: __openat_nocancel (in /lib64/libc-2.16.so)
+==2283==    by 0x57001C4: __opendirat (in /lib64/libc-2.16.so)
+==2283==    by 0x40459B: expandWildcards(char*, char*) (shell.y:278)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa169 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D154: strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40464C: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa169 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D1A3: strcpy (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40468A: expandWildcards(char*, char*) (shell.y:295)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59fa169 is 0 bytes after a block of size 9 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4040FE: expandWildcards(char*, char*) (shell.y:200)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 1
+==2283==    at 0x4C2CE62: strcat (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x4046A4: expandWildcards(char*, char*) (shell.y:296)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a059a8 is 0 bytes after a block of size 24 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x4C2D174: __GI_strlen (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x56D09E5: strdup (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a059a8 is 0 bytes after a block of size 24 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x56D9513: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a059a1 is 17 bytes inside a block of size 24 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x56D94F6: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a05de6 is 6 bytes inside a block of size 13 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 2
+==2283==    at 0x56D94CE: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a05f60 is 32 bytes inside a block of size 33 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 4
+==2283==    at 0x56D94E5: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a0cd81 is 33 bytes inside a block of size 36 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 1
+==2283==    at 0x56D94BE: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a10c60 is 0 bytes after a block of size 32 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x56D958D: __GI_memcpy (in /lib64/libc-2.16.so)
+==2283==    by 0x4040B7: expandWildcards(char*, char*) (shell.y:196)
+==2283==    by 0x4046BD: expandWildcards(char*, char*) (shell.y:299)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x5a14cf8 is 24 bytes inside a block of size 31 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x40466A: expandWildcards(char*, char*) (shell.y:294)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40445A: expandWildcards(char*, char*) (shell.y:251)
+==2283==    by 0x40407E: expandWildcardsIfNecessary(char*) (shell.y:166)
+==2283==    by 0x403C13: yyparse() (shell.y:86)
+==2283==    by 0x405867: main (command.cc:451)
+==2283== 
+==2283== Invalid write of size 8
+==2283==    at 0x404D7F: Command::insertSimpleCommand(SimpleCommand*) (command.cc:170)
+==2283==    by 0x403BFF: yyparse() (shell.y:72)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x405149: Command::execute() (command.cc:260)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x405370: Command::execute() (command.cc:342)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x405415: Command::execute() (command.cc:353)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x405529: Command::execute() (command.cc:362)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2286== Invalid read of size 8
+==2286==    at 0x4055D4: Command::execute() (command.cc:380)
+==2286==    by 0x403BC1: yyparse() (shell.y:54)
+==2286==    by 0x405867: main (command.cc:451)
+==2286==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2286==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2286==    by 0x404C94: Command::Command() (command.cc:146)
+==2286==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2286==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2286==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2286==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2286== 
+==2286== Invalid read of size 8
+==2286==    at 0x40565B: Command::execute() (command.cc:389)
+==2286==    by 0x403BC1: yyparse() (shell.y:54)
+==2286==    by 0x405867: main (command.cc:451)
+==2286==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2286==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2286==    by 0x404C94: Command::Command() (command.cc:146)
+==2286==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2286==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2286==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2286==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2286== 
+==2286== Invalid read of size 8
+==2286==    at 0x405677: Command::execute() (command.cc:389)
+==2286==    by 0x403BC1: yyparse() (shell.y:54)
+==2286==    by 0x405867: main (command.cc:451)
+==2286==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2286==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2286==    by 0x404C94: Command::Command() (command.cc:146)
+==2286==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2286==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2286==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2286==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2286== 
+/usr/bin/2to3
+/usr/bin/2to3-2.7
+/usr/bin/2to3-3.3
+/usr/bin/411toppm
+/usr/bin/ControlPanel
+/usr/bin/DllPlugInTester
+/usr/bin/FvwmCommand
+/usr/bin/GET
+/usr/bin/HEAD
+/usr/bin/HsColour
+/usr/bin/HtmlConverter
+/usr/bin/Magick++-config
+/usr/bin/Magick-config
+/usr/bin/MagickCore-config
+/usr/bin/MagickWand-config
+/usr/bin/Mail
+/usr/bin/POST
+/usr/bin/R
+/usr/bin/Rscript
+/usr/bin/Wand-config
+/usr/bin/X
+/usr/bin/Xnest
+/usr/bin/Xorg
+/usr/bin/Xvfb
+/usr/bin/Xvnc
+/usr/bin/[
+/usr/bin/a2p
+/usr/bin/a2ps
+/usr/bin/a52dec
+/usr/bin/aafire
+/usr/bin/aainfo
+/usr/bin/aalib-config
+/usr/bin/aasavefont
+/usr/bin/aatest
+/usr/bin/ac
+/usr/bin/aclocal
+/usr/bin/aclocal-1.11
+/usr/bin/aclocal-1.12
+/usr/bin/aclocal-1.13
+/usr/bin/aconnect
+/usr/bin/acroread
+/usr/bin/activation-client
+/usr/bin/acyclic
+/usr/bin/addftinfo
+/usr/bin/addr2line
+/usr/bin/affixcompress
+/usr/bin/afmtodit
+/usr/bin/alacarte
+/usr/bin/alex
+/usr/bin/alpine
+/usr/bin/alsa-info
+/usr/bin/alsamixer
+/usr/bin/alsaucm
+/usr/bin/amidi
+/usr/bin/amixer
+/usr/bin/amuFormat.sh
+/usr/bin/animate
+/usr/bin/annotate
+/usr/bin/ant
+/usr/bin/antRun
+/usr/bin/antRun.pl
+/usr/bin/any2djvu
+/usr/bin/anytopnm
+/usr/bin/anytovcd.sh
+/usr/bin/aot-compile
+/usr/bin/aplay
+/usr/bin/aplaymidi
+/usr/bin/appletviewer
+/usr/bin/appres
+/usr/bin/apr-1-config
+/usr/bin/apropos
+/usr/bin/apt
+/usr/bin/apu-1-config
+/usr/bin/ar
+/usr/bin/arch
+/usr/bin/arecord
+/usr/bin/arecordmidi
+/usr/bin/as
+/usr/bin/asciitopgm
+/usr/bin/aseqdump
+/usr/bin/aseqnet
+/usr/bin/aserver
+/usr/bin/asn1Coding
+/usr/bin/asn1Decoding
+/usr/bin/asn1Parser
+/usr/bin/aspell
+/usr/bin/aspell-import
+/usr/bin/atktopbm
+/usr/bin/atobm
+/usr/bin/audiocompose
+/usr/bin/audiosend
+/usr/bin/autoconf
+/usr/bin/autoconf-2.13
+/usr/bin/autoconf-2.69
+/usr/bin/autoheader
+/usr/bin/autoheader-2.13
+/usr/bin/autoheader-2.69
+/usr/bin/autom4te
+/usr/bin/autom4te-2.69
+/usr/bin/automake
+/usr/bin/automake-1.11
+/usr/bin/automake-1.12
+/usr/bin/automake-1.13
+/usr/bin/autopoint
+/usr/bin/autoreconf
+/usr/bin/autoreconf-2.13
+/usr/bin/autoreconf-2.69
+/usr/bin/autoscan
+/usr/bin/autoscan-2.13
+/usr/bin/autoscan-2.69
+/usr/bin/autoupdate
+/usr/bin/autoupdate-2.13
+/usr/bin/autoupdate-2.69
+/usr/bin/avstopam
+/usr/bin/awk
+/usr/bin/b2m-xemacs
+/usr/bin/baobab
+/usr/bin/base64
+/usr/bin/basename
+/usr/bin/bashbug
+/usr/bin/bc
+/usr/bin/bcomps
+/usr/bin/bdftogd
+/usr/bin/bdftopcf
+/usr/bin/bdftruncate
+/usr/bin/bggen
+/usr/bin/binutils-config
+/usr/bin/bioradtopgm
+/usr/bin/bison
+/usr/bin/bitmap
+/usr/bin/blackjack
+/usr/bin/bltsh
+/usr/bin/bltsh24
+/usr/bin/bltwish
+/usr/bin/bltwish24
+/usr/bin/bmp2tiff
+/usr/bin/bmptopnm
+/usr/bin/bmptoppm
+/usr/bin/bmtoa
+/usr/bin/bonobo-browser
+/usr/bin/bonobo-slay
+/usr/bin/brasero
+/usr/bin/brushtopbm
+/usr/bin/bsdcpio
+/usr/bin/bsdiff
+/usr/bin/bsdtar
+/usr/bin/bspatch
+/usr/bin/btcflash
+/usr/bin/bug-buddy
+/usr/bin/bugpoint
+/usr/bin/buildhash
+/usr/bin/byacc
+/usr/bin/bzcmp
+/usr/bin/bzdiff
+/usr/bin/bzegrep
+/usr/bin/bzfgrep
+/usr/bin/bzgrep
+/usr/bin/bzip2recover
+/usr/bin/bzless
+/usr/bin/bzmore
+/usr/bin/bzz
+/usr/bin/c++
+/usr/bin/c++-4.7.3
+/usr/bin/c++filt
+/usr/bin/c2ph
+/usr/bin/c44
+/usr/bin/c89
+/usr/bin/c99
+/usr/bin/c_rehash
+/usr/bin/cabextract
+/usr/bin/cairo-sphinx
+/usr/bin/cairo-trace
+/usr/bin/cal
+/usr/bin/callgrind_annotate
+/usr/bin/callgrind_control
+/usr/bin/cameratopam
+/usr/bin/camlrunm
+/usr/bin/canberra-gtk-play
+/usr/bin/cancel
+/usr/bin/captoinfo
+/usr/bin/card
+/usr/bin/catchsegv
+/usr/bin/cc
+/usr/bin/ccmake
+/usr/bin/ccmakedep
+/usr/bin/ccomps
+/usr/bin/cd-drive
+/usr/bin/cd-info
+/usr/bin/cd-read
+/usr/bin/cdda-player
+/usr/bin/cdda2mp3
+/usr/bin/cdda2ogg
+/usr/bin/cdda2wav
+/usr/bin/cdparanoia
+/usr/bin/cdr2raw
+/usr/bin/cdr2text
+/usr/bin/cdr2xhtml
+/usr/bin/cdrdao
+/usr/bin/cdrecord
+/usr/bin/cdxa2mpeg
+/usr/bin/certtool
+/usr/bin/cg_annotate
+/usr/bin/cg_diff
+/usr/bin/cg_merge
+/usr/bin/chage
+/usr/bin/charmap
+/usr/bin/chattr
+/usr/bin/chcon
+/usr/bin/chem
+/usr/bin/chfn
+/usr/bin/chkdupexe
+/usr/bin/chromium
+/usr/bin/chromium-browser
+/usr/bin/chroot
+/usr/bin/chrt
+/usr/bin/chsh
+/usr/bin/chvt
+/usr/bin/ci
+/usr/bin/cifsiostat
+/usr/bin/circo
+/usr/bin/cistopbm
+/usr/bin/cjb2
+/usr/bin/cjpeg
+/usr/bin/cksum
+/usr/bin/cleanlinks
+/usr/bin/clear
+/usr/bin/cmake
+/usr/bin/cmis-client
+/usr/bin/cmis-client-0.3
+/usr/bin/cmp
+/usr/bin/cmuwmtopbm
+/usr/bin/cmx2raw
+/usr/bin/cmx2text
+/usr/bin/cmx2xhtml
+/usr/bin/co
+/usr/bin/code2color
+/usr/bin/col
+/usr/bin/colcrt
+/usr/bin/colrm
+/usr/bin/column
+/usr/bin/comm
+/usr/bin/compare
+/usr/bin/compface
+/usr/bin/compile-et.pl
+/usr/bin/compile_et
+/usr/bin/complete-ant-cmd.pl
+/usr/bin/composeglyphs
+/usr/bin/composite
+/usr/bin/compress
+/usr/bin/config_data
+/usr/bin/config_data-0.3603-perl-5.12.4
+/usr/bin/config_data-0.400.300-Module-Build-0.400.300
+/usr/bin/conjure
+/usr/bin/convert
+/usr/bin/corelist
+/usr/bin/corelist-2.500.0-perl-5.12.4
+/usr/bin/corelist-2.840.0-Module-CoreList-2.840.0
+/usr/bin/corrupt_mpeg2
+/usr/bin/cpack
+/usr/bin/cpaldjvu
+/usr/bin/cpan
+/usr/bin/cpan-1.945.600-perl-5.12.4
+/usr/bin/cpan2dist
+/usr/bin/cpan2dist-0.900.0-perl-5.12.4
+/usr/bin/cpanp
+/usr/bin/cpanp-0.900.0-perl-5.12.4
+/usr/bin/cpanp-run-perl
+/usr/bin/cpanp-run-perl-0.900.0-perl-5.12.4
+/usr/bin/cpp
+/usr/bin/cpp-4.7.3
+/usr/bin/cppunit-config
+/usr/bin/crc32
+/usr/bin/create-branching-keyboard
+/usr/bin/createfp
+/usr/bin/croco-0.6-config
+/usr/bin/crontab
+/usr/bin/cscope
+/usr/bin/cscope-indexer
+/usr/bin/csepdjvu
+/usr/bin/csplit
+/usr/bin/csslint-0.6
+/usr/bin/ctags
+/usr/bin/ctags-emacs-24
+/usr/bin/ctags-xemacs
+/usr/bin/ctest
+/usr/bin/cue2toc
+/usr/bin/cups-config
+/usr/bin/cupstestdsc
+/usr/bin/cupstestppd
+/usr/bin/curl
+/usr/bin/curl-config
+/usr/bin/cut
+/usr/bin/cvs
+/usr/bin/cvsbug
+/usr/bin/cvt
+/usr/bin/cxpm
+/usr/bin/cygdb
+/usr/bin/cython
+/usr/bin/cytune
+/usr/bin/dasher
+/usr/bin/db4.8_archive
+/usr/bin/db4.8_checkpoint
+/usr/bin/db4.8_deadlock
+/usr/bin/db4.8_dump
+/usr/bin/db4.8_hotbackup
+/usr/bin/db4.8_load
+/usr/bin/db4.8_printlog
+/usr/bin/db4.8_recover
+/usr/bin/db4.8_sql
+/usr/bin/db4.8_stat
+/usr/bin/db4.8_upgrade
+/usr/bin/db4.8_verify
+/usr/bin/dbus-binding-tool
+/usr/bin/dbus-cleanup-sockets
+/usr/bin/dbus-daemon
+/usr/bin/dbus-launch
+/usr/bin/dbus-monitor
+/usr/bin/dbus-send
+/usr/bin/dbus-uuidgen
+/usr/bin/dc
+/usr/bin/dcadec
+/usr/bin/dconf
+/usr/bin/ddbugtopbm
+/usr/bin/ddd
+/usr/bin/ddjvu
+/usr/bin/deallocvt
+/usr/bin/defmt-c
+/usr/bin/defmt-sh
+/usr/bin/depend-java-query
+/usr/bin/derb
+/usr/bin/desktop-file-edit
+/usr/bin/desktop-file-install
+/usr/bin/desktop-file-validate
+/usr/bin/devdump
+/usr/bin/dga
+/usr/bin/dgawk
+/usr/bin/diff
+/usr/bin/diff-highlight
+/usr/bin/diff3
+/usr/bin/diffimg
+/usr/bin/diffpp
+/usr/bin/dig
+/usr/bin/dijkstra
+/usr/bin/dir
+/usr/bin/dircolors
+/usr/bin/dirname
+/usr/bin/display
+/usr/bin/djpeg
+/usr/bin/djvm
+/usr/bin/djvmcvt
+/usr/bin/djvudigital
+/usr/bin/djvudump
+/usr/bin/djvuextract
+/usr/bin/djvumake
+/usr/bin/djvups
+/usr/bin/djvused
+/usr/bin/djvuserve
+/usr/bin/djvutoxml
+/usr/bin/djvutxt
+/usr/bin/djvuxmlparser
+/usr/bin/dltest
+/usr/bin/dnssec-keygen
+/usr/bin/domainname
+/usr/bin/dot
+/usr/bin/dot2gxl
+/usr/bin/dotlockfile
+/usr/bin/dotty
+/usr/bin/double
+/usr/bin/dprofpp
+/usr/bin/drjava
+/usr/bin/dtsdec
+/usr/bin/du
+/usr/bin/dubdv
+/usr/bin/dumpelf
+/usr/bin/dumphint
+/usr/bin/dumpkeys
+/usr/bin/dumpsexp
+/usr/bin/dvconnect
+/usr/bin/dvd+rw-booktype
+/usr/bin/dvd+rw-format
+/usr/bin/dvd+rw-mediainfo
+/usr/bin/dvd-ram-control
+/usr/bin/dvdauthor
+/usr/bin/dvddirdel
+/usr/bin/dvdnav-config
+/usr/bin/dvdread-config
+/usr/bin/dvdunauthor
+/usr/bin/dvipdf
+/usr/bin/dwell-click-applet
+/usr/bin/easy_install
+/usr/bin/ebrowse
+/usr/bin/ebrowse-emacs-24
+/usr/bin/ebuild
+/usr/bin/eclean
+/usr/bin/eclean-dist
+/usr/bin/eclean-pkg
+/usr/bin/eclipse
+/usr/bin/eclipse-4.3
+/usr/bin/egencache
+/usr/bin/eject
+/usr/bin/elfedit
+/usr/bin/elinks
+/usr/bin/ellcc
+/usr/bin/emacs
+/usr/bin/emacs-24
+/usr/bin/emacsclient
+/usr/bin/emacsclient-emacs-24
+/usr/bin/emerge
+/usr/bin/emerge-webrsync
+/usr/bin/emirrordist
+/usr/bin/enalyze
+/usr/bin/enc2xs
+/usr/bin/enc2xs-2.39-perl-5.12.4
+/usr/bin/enc2xs-2.470.0-Encode-2.470.0
+/usr/bin/enca
+/usr/bin/enchant
+/usr/bin/enchant-lsmod
+/usr/bin/encodedv
+/usr/bin/enconv
+/usr/bin/enscript
+/usr/bin/env
+/usr/bin/envsubst
+/usr/bin/eog
+/usr/bin/epkginfo
+/usr/bin/eps2eps
+/usr/bin/epsffit
+/usr/bin/eqn
+/usr/bin/eqn2graph
+/usr/bin/equery
+/usr/bin/erb
+/usr/bin/erb18
+/usr/bin/erb19
+/usr/bin/erb20
+/usr/bin/eread
+/usr/bin/escp2topbm
+/usr/bin/eselect
+/usr/bin/eshowkw
+/usr/bin/espeak
+/usr/bin/espeak-synthesis-driver
+/usr/bin/etags
+/usr/bin/etags-emacs-24
+/usr/bin/etags-xemacs
+/usr/bin/eu-addr2line
+/usr/bin/eu-ar
+/usr/bin/eu-elfcmp
+/usr/bin/eu-elflint
+/usr/bin/eu-findtextrel
+/usr/bin/eu-ld
+/usr/bin/eu-make-debug-archive
+/usr/bin/eu-nm
+/usr/bin/eu-objdump
+/usr/bin/eu-ranlib
+/usr/bin/eu-readelf
+/usr/bin/eu-size
+/usr/bin/eu-strings
+/usr/bin/eu-strip
+/usr/bin/eu-unstrip
+/usr/bin/euse
+/usr/bin/event_rpcgen.py
+/usr/bin/eventlogadm
+/usr/bin/eview
+/usr/bin/evim
+/usr/bin/evince
+/usr/bin/evince-previewer
+/usr/bin/evince-thumbnailer
+/usr/bin/ex
+/usr/bin/exempi
+/usr/bin/exifautotran
+/usr/bin/expand
+/usr/bin/expect
+/usr/bin/expectk
+/usr/bin/expiry
+/usr/bin/expr
+/usr/bin/exr2aces
+/usr/bin/exrenvmap
+/usr/bin/exrheader
+/usr/bin/exrmakepreview
+/usr/bin/exrmaketiled
+/usr/bin/exrmultiview
+/usr/bin/exrstdattr
+/usr/bin/extcheck
+/usr/bin/extcompose
+/usr/bin/extract_a52
+/usr/bin/extract_dca
+/usr/bin/extract_dts
+/usr/bin/extract_mpeg2
+/usr/bin/extractres
+/usr/bin/exuberant-ctags
+/usr/bin/eyuvtoppm
+/usr/bin/f2py
+/usr/bin/faac
+/usr/bin/faad
+/usr/bin/factor
+/usr/bin/faillog
+/usr/bin/fallocate
+/usr/bin/fax2ps
+/usr/bin/fax2tiff
+/usr/bin/fbset
+/usr/bin/fc-cache
+/usr/bin/fc-cat
+/usr/bin/fc-list
+/usr/bin/fc-match
+/usr/bin/fc-pattern
+/usr/bin/fc-query
+/usr/bin/fc-scan
+/usr/bin/fc-validate
+/usr/bin/fdp
+/usr/bin/ffmpeg
+/usr/bin/ffplay
+/usr/bin/ffprobe
+/usr/bin/ffserver
+/usr/bin/fgconsole
+/usr/bin/fig2dev
+/usr/bin/fig2mpdf
+/usr/bin/fig2ps2tex
+/usr/bin/file
+/usr/bin/file-roller
+/usr/bin/find
+/usr/bin/find2perl
+/usr/bin/findaffix
+/usr/bin/finger
+/usr/bin/firefox
+/usr/bin/fitstopnm
+/usr/bin/fixdlsrps
+/usr/bin/fixfmps
+/usr/bin/fixnt
+/usr/bin/fixps
+/usr/bin/fixpsditps
+/usr/bin/fixpspps
+/usr/bin/fixscribeps
+/usr/bin/fixtpps
+/usr/bin/fixwfwps
+/usr/bin/fixwpps
+/usr/bin/fixwwps
+/usr/bin/flac
+/usr/bin/flash-player-properties
+/usr/bin/flea
+/usr/bin/flex
+/usr/bin/flex++
+/usr/bin/flock
+/usr/bin/floppyd
+/usr/bin/floppyd_installtest
+/usr/bin/fmt
+/usr/bin/fold
+/usr/bin/font2c
+/usr/bin/formail
+/usr/bin/free
+/usr/bin/freetype-config
+/usr/bin/fribidi
+/usr/bin/fstopgm
+/usr/bin/ftbench
+/usr/bin/ftdiff
+/usr/bin/ftdump
+/usr/bin/ftgamma
+/usr/bin/ftgrid
+/usr/bin/ftlint
+/usr/bin/ftmulti
+/usr/bin/ftp
+/usr/bin/ftstring
+/usr/bin/ftvalid
+/usr/bin/ftview
+/usr/bin/function_grep.pl
+/usr/bin/funzip
+/usr/bin/fusermount
+/usr/bin/fvwm
+/usr/bin/fvwm-bug
+/usr/bin/fvwm-config
+/usr/bin/fvwm-convert-2.4
+/usr/bin/fvwm-convert-2.6
+/usr/bin/fvwm-menu-desktop
+/usr/bin/fvwm-menu-directory
+/usr/bin/fvwm-menu-headlines
+/usr/bin/fvwm-perllib
+/usr/bin/fvwm-root
+/usr/bin/fvwm2
+/usr/bin/g++
+/usr/bin/g++-4.7.3
+/usr/bin/g3topbm
+/usr/bin/gappletviewer
+/usr/bin/gawk
+/usr/bin/gc
+/usr/bin/gc-analyze
+/usr/bin/gcalccmd
+/usr/bin/gcalctool
+/usr/bin/gcc
+/usr/bin/gcc-4.7.3
+/usr/bin/gcc-ar
+/usr/bin/gcc-config
+/usr/bin/gcc-nm
+/usr/bin/gcc-ranlib
+/usr/bin/gccmakedep
+/usr/bin/gcj
+/usr/bin/gcj-4.7.3
+/usr/bin/gcj-dbtool
+/usr/bin/gcjh
+/usr/bin/gcjh-4.7.3
+/usr/bin/gconf-editor
+/usr/bin/gconf-merge-tree
+/usr/bin/gconftool-2
+/usr/bin/gcov
+/usr/bin/gcov-4.7.3
+/usr/bin/gd2copypal
+/usr/bin/gd2togif
+/usr/bin/gd2topng
+/usr/bin/gdb
+/usr/bin/gdbus
+/usr/bin/gdbus-codegen
+/usr/bin/gdcmpgif
+/usr/bin/gdiffmk
+/usr/bin/gdk-pixbuf-csource
+/usr/bin/gdk-pixbuf-pixdata
+/usr/bin/gdk-pixbuf-query-loaders
+/usr/bin/gdlib-config
+/usr/bin/gdm
+/usr/bin/gdmXnest
+/usr/bin/gdmXnestchooser
+/usr/bin/gdmdynamic
+/usr/bin/gdmflexiserver
+/usr/bin/gdmphotosetup
+/usr/bin/gdmplay
+/usr/bin/gdmthemetester
+/usr/bin/gdparttopng
+/usr/bin/gdtopng
+/usr/bin/gedi
+/usr/bin/gedit
+/usr/bin/gegl
+/usr/bin/gem
+/usr/bin/gem18
+/usr/bin/gem19
+/usr/bin/gem20
+/usr/bin/gemtopbm
+/usr/bin/gemtopnm
+/usr/bin/genbrk
+/usr/bin/gencat
+/usr/bin/gencfu
+/usr/bin/gencnval
+/usr/bin/gendict
+/usr/bin/genrb
+/usr/bin/geqn
+/usr/bin/getafm
+/usr/bin/getconf
+/usr/bin/getent
+/usr/bin/getfilename
+/usr/bin/getkeycodes
+/usr/bin/getopt
+/usr/bin/gettext
+/usr/bin/gettext.sh
+/usr/bin/gettextize
+/usr/bin/gfortran
+/usr/bin/gfortran-4.7.3
+/usr/bin/ggz
+/usr/bin/ggz-config
+/usr/bin/ggz-wrapper
+/usr/bin/ghc
+/usr/bin/ghc-7.6.3
+/usr/bin/ghc-pkg
+/usr/bin/ghc-pkg-7.6.3
+/usr/bin/ghci
+/usr/bin/ghci-7.6.3
+/usr/bin/gif2epsn
+/usr/bin/gif2ps
+/usr/bin/gif2rgb
+/usr/bin/gif2tiff
+/usr/bin/gif2x11
+/usr/bin/gifasm
+/usr/bin/gifbg
+/usr/bin/gifburst
+/usr/bin/gifclip
+/usr/bin/gifclrmp
+/usr/bin/gifcolor
+/usr/bin/gifcomb
+/usr/bin/gifcompose
+/usr/bin/giffiltr
+/usr/bin/giffix
+/usr/bin/gifflip
+/usr/bin/gifhisto
+/usr/bin/gifinfo
+/usr/bin/gifinter
+/usr/bin/gifinto
+/usr/bin/gifovly
+/usr/bin/gifpos
+/usr/bin/gifrotat
+/usr/bin/gifrsize
+/usr/bin/gifspnge
+/usr/bin/giftext
+/usr/bin/giftogd2
+/usr/bin/giftopnm
+/usr/bin/gifwedge
+/usr/bin/gij
+/usr/bin/gimp
+/usr/bin/gimp-2.8
+/usr/bin/gimp-console
+/usr/bin/gimp-console-2.8
+/usr/bin/gimptool-2.0
+/usr/bin/gio-querymodules
+/usr/bin/git
+/usr/bin/git-cvsserver
+/usr/bin/git-diffall
+/usr/bin/git-receive-pack
+/usr/bin/git-shell
+/usr/bin/git-upload-archive
+/usr/bin/git-upload-pack
+/usr/bin/gitk
+/usr/bin/gitview
+/usr/bin/gjar
+/usr/bin/gjarsigner
+/usr/bin/gjavah
+/usr/bin/gjl
+/usr/bin/gkbd-indicator-plugins-capplet
+/usr/bin/gkeytool
+/usr/bin/gksu
+/usr/bin/gksu-properties
+/usr/bin/gksudo
+/usr/bin/glast
+/usr/bin/glav
+/usr/bin/glchess
+/usr/bin/glib-compile-resources
+/usr/bin/glib-compile-schemas
+/usr/bin/glib-genmarshal
+/usr/bin/glib-gettextize
+/usr/bin/glib-mkenums
+/usr/bin/glines
+/usr/bin/glsa-check
+/usr/bin/glxgears
+/usr/bin/glxinfo
+/usr/bin/gmake
+/usr/bin/gmenu-simple-editor
+/usr/bin/gml2gv
+/usr/bin/gmsgfmt
+/usr/bin/gnative2ascii
+/usr/bin/gnect
+/usr/bin/gnibbles
+/usr/bin/gnobots2
+/usr/bin/gnome-about
+/usr/bin/gnome-appearance-properties
+/usr/bin/gnome-at-mobility
+/usr/bin/gnome-at-properties
+/usr/bin/gnome-at-visual
+/usr/bin/gnome-audio-profiles-properties
+/usr/bin/gnome-autogen.sh
+/usr/bin/gnome-calculator
+/usr/bin/gnome-character-map
+/usr/bin/gnome-control-center
+/usr/bin/gnome-default-applications-properties
+/usr/bin/gnome-desktop-item-edit
+/usr/bin/gnome-dictionary
+/usr/bin/gnome-display-properties
+/usr/bin/gnome-doc-common
+/usr/bin/gnome-doc-prepare
+/usr/bin/gnome-doc-tool
+/usr/bin/gnome-font-viewer
+/usr/bin/gnome-gnuchess
+/usr/bin/gnome-help
+/usr/bin/gnome-keybinding-properties
+/usr/bin/gnome-keyboard-properties
+/usr/bin/gnome-keyring
+/usr/bin/gnome-keyring-daemon
+/usr/bin/gnome-mouse-properties
+/usr/bin/gnome-mplayer
+/usr/bin/gnome-nettool
+/usr/bin/gnome-network-properties
+/usr/bin/gnome-open
+/usr/bin/gnome-panel
+/usr/bin/gnome-panel-screenshot
+/usr/bin/gnome-screensaver
+/usr/bin/gnome-screensaver-command
+/usr/bin/gnome-screensaver-preferences
+/usr/bin/gnome-screenshot
+/usr/bin/gnome-search-tool
+/usr/bin/gnome-session
+/usr/bin/gnome-session-properties
+/usr/bin/gnome-session-save
+/usr/bin/gnome-sound-recorder
+/usr/bin/gnome-sudoku
+/usr/bin/gnome-system-log
+/usr/bin/gnome-system-monitor
+/usr/bin/gnome-terminal
+/usr/bin/gnome-text-editor
+/usr/bin/gnome-thumbnail-font
+/usr/bin/gnome-typing-monitor
+/usr/bin/gnome-volume-control
+/usr/bin/gnome-window-properties
+/usr/bin/gnome-wm
+/usr/bin/gnomevfs-cat
+/usr/bin/gnomevfs-copy
+/usr/bin/gnomevfs-df
+/usr/bin/gnomevfs-info
+/usr/bin/gnomevfs-ls
+/usr/bin/gnomevfs-mkdir
+/usr/bin/gnomevfs-monitor
+/usr/bin/gnomevfs-mv
+/usr/bin/gnomevfs-rm
+/usr/bin/gnomine
+/usr/bin/gnotravex
+/usr/bin/gnotski
+/usr/bin/gnuattach
+/usr/bin/gnuclient
+/usr/bin/gnudoit
+/usr/bin/gnuplot
+/usr/bin/gnutls-cli
+/usr/bin/gnutls-cli-debug
+/usr/bin/gnutls-serv
+/usr/bin/gobject-query
+/usr/bin/gok
+/usr/bin/gorbd
+/usr/bin/gouldtoppm
+/usr/bin/gpasswd
+/usr/bin/gperf
+/usr/bin/gpg
+/usr/bin/gpg-agent
+/usr/bin/gpg-connect-agent
+/usr/bin/gpg-error
+/usr/bin/gpg-error-config
+/usr/bin/gpg-zip
+/usr/bin/gpg2
+/usr/bin/gpgconf
+/usr/bin/gpgkey2ssh
+/usr/bin/gpgme-config
+/usr/bin/gpgparsemail
+/usr/bin/gpgsm
+/usr/bin/gpgsm-gencert.sh
+/usr/bin/gpgsplit
+/usr/bin/gpgv
+/usr/bin/gpgv2
+/usr/bin/gprof
+/usr/bin/gr2fonttest
+/usr/bin/grap2graph
+/usr/bin/graph
+/usr/bin/grep-changelog
+/usr/bin/grep-changelog-emacs-24
+/usr/bin/gresource
+/usr/bin/grmic
+/usr/bin/grmid
+/usr/bin/grmiregistry
+/usr/bin/grn
+/usr/bin/grodvi
+/usr/bin/groff
+/usr/bin/groffer
+/usr/bin/grog
+/usr/bin/grolbp
+/usr/bin/grolj4
+/usr/bin/gropdf
+/usr/bin/grops
+/usr/bin/grotty
+/usr/bin/growisofs
+/usr/bin/gs
+/usr/bin/gsbj
+/usr/bin/gsdj
+/usr/bin/gsdj500
+/usr/bin/gsdjvu
+/usr/bin/gserialver
+/usr/bin/gsettings
+/usr/bin/gsettings-data-convert
+/usr/bin/gsettings-schema-convert
+/usr/bin/gslj
+/usr/bin/gslp
+/usr/bin/gsnd
+/usr/bin/gst-discoverer-0.10
+/usr/bin/gst-discoverer-1.0
+/usr/bin/gst-feedback-0.10
+/usr/bin/gst-inspect-0.10
+/usr/bin/gst-inspect-1.0
+/usr/bin/gst-launch-0.10
+/usr/bin/gst-launch-1.0
+/usr/bin/gst-typefind-0.10
+/usr/bin/gst-typefind-1.0
+/usr/bin/gst-visualise-0.10
+/usr/bin/gst-xmlinspect-0.10
+/usr/bin/gst-xmllaunch-0.10
+/usr/bin/gstreamer-properties
+/usr/bin/gsx
+/usr/bin/gtali
+/usr/bin/gtbl
+/usr/bin/gtester
+/usr/bin/gtf
+/usr/bin/gtk-builder-convert
+/usr/bin/gtk-query-immodules-2.0
+/usr/bin/gtk-update-icon-cache
+/usr/bin/gtkdoc-rebase
+/usr/bin/gtkhtml-editor-test
+/usr/bin/gtnameserv
+/usr/bin/gucharmap
+/usr/bin/gv
+/usr/bin/gv-update-userconfig
+/usr/bin/gv2gxl
+/usr/bin/gvcolor
+/usr/bin/gvfs-cat
+/usr/bin/gvfs-copy
+/usr/bin/gvfs-info
+/usr/bin/gvfs-less
+/usr/bin/gvfs-ls
+/usr/bin/gvfs-mime
+/usr/bin/gvfs-mkdir
+/usr/bin/gvfs-monitor-dir
+/usr/bin/gvfs-monitor-file
+/usr/bin/gvfs-mount
+/usr/bin/gvfs-move
+/usr/bin/gvfs-open
+/usr/bin/gvfs-rename
+/usr/bin/gvfs-rm
+/usr/bin/gvfs-save
+/usr/bin/gvfs-set-attribute
+/usr/bin/gvfs-trash
+/usr/bin/gvfs-tree
+/usr/bin/gvgen
+/usr/bin/gview
+/usr/bin/gvim
+/usr/bin/gvimdiff
+/usr/bin/gvnccapture
+/usr/bin/gvpack
+/usr/bin/gvpr
+/usr/bin/gxditview
+/usr/bin/gxl2dot
+/usr/bin/gxl2gv
+/usr/bin/gzexe
+/usr/bin/h2ph
+/usr/bin/h2xs
+/usr/bin/haddock
+/usr/bin/happy
+/usr/bin/hb-ot-shape-closure
+/usr/bin/hb-shape
+/usr/bin/hb-view
+/usr/bin/hdifftopam
+/usr/bin/head
+/usr/bin/help2man
+/usr/bin/hersheydemo
+/usr/bin/hexdump
+/usr/bin/hg
+/usr/bin/hg-2.7
+/usr/bin/hg-ssh
+/usr/bin/hgeditor
+/usr/bin/hgk
+/usr/bin/hipstopgm
+/usr/bin/hmac256
+/usr/bin/host
+/usr/bin/hostid
+/usr/bin/hostname
+/usr/bin/hoststat
+/usr/bin/hp2ps
+/usr/bin/hpc
+/usr/bin/hpcdtoppm
+/usr/bin/hpftodit
+/usr/bin/hsc2hs
+/usr/bin/hunspell
+/usr/bin/hunspell-analyze
+/usr/bin/hunspell-chmorph
+/usr/bin/hunspell-munch
+/usr/bin/hunspell-unmunch
+/usr/bin/hunzip
+/usr/bin/hzip
+/usr/bin/i386
+/usr/bin/iagno
+/usr/bin/icc2ps
+/usr/bin/icclink
+/usr/bin/icctrans
+/usr/bin/iceauth
+/usr/bin/icombine
+/usr/bin/icon2gif
+/usr/bin/icontopbm
+/usr/bin/iconv
+/usr/bin/icu-config
+/usr/bin/icuinfo
+/usr/bin/id
+/usr/bin/ident
+/usr/bin/identify
+/usr/bin/idle
+/usr/bin/idle2.7
+/usr/bin/idle3.3
+/usr/bin/idlj
+/usr/bin/iecset
+/usr/bin/ifnames
+/usr/bin/ifnames-2.13
+/usr/bin/ifnames-2.69
+/usr/bin/igawk
+/usr/bin/ijoin
+/usr/bin/ijs-config
+/usr/bin/ijs_client_example
+/usr/bin/ijs_server_example
+/usr/bin/ilbmtoppm
+/usr/bin/image_to_j2k
+/usr/bin/imake
+/usr/bin/imgcmp
+/usr/bin/imginfo
+/usr/bin/imgtoppm
+/usr/bin/import
+/usr/bin/import-tars
+/usr/bin/includeres
+/usr/bin/indent
+/usr/bin/indxbib
+/usr/bin/info
+/usr/bin/infocmp
+/usr/bin/infokey
+/usr/bin/infotocap
+/usr/bin/infotopam
+/usr/bin/innochecksum
+/usr/bin/install
+/usr/bin/install-catalog
+/usr/bin/install-info
+/usr/bin/instmodsh
+/usr/bin/instmodsh-6.56-perl-5.12.4
+/usr/bin/instmodsh-6.640.0-ExtUtils-MakeMaker-6.640.0
+/usr/bin/intltool-extract
+/usr/bin/intltool-merge
+/usr/bin/intltool-prepare
+/usr/bin/intltool-update
+/usr/bin/intltoolize
+/usr/bin/invest-chart
+/usr/bin/ionice
+/usr/bin/iostat
+/usr/bin/ipcmk
+/usr/bin/ipcrm
+/usr/bin/ipcs
+/usr/bin/ipptool
+/usr/bin/irb
+/usr/bin/irb18
+/usr/bin/irb19
+/usr/bin/irb20
+/usr/bin/iso-info
+/usr/bin/iso-read
+/usr/bin/isodebug
+/usr/bin/isodump
+/usr/bin/isoinfo
+/usr/bin/isosize
+/usr/bin/isovfy
+/usr/bin/ispell
+/usr/bin/ispell-aspell
+/usr/bin/ispellaff2myspell
+/usr/bin/isql
+/usr/bin/iusql
+/usr/bin/ixion-parser
+/usr/bin/ixion-sorter
+/usr/bin/j2k_dump
+/usr/bin/j2k_to_image
+/usr/bin/jar
+/usr/bin/jarsigner
+/usr/bin/jasper
+/usr/bin/java
+/usr/bin/java-1.5-fixer
+/usr/bin/java-check-environment
+/usr/bin/java-config
+/usr/bin/java-config-2
+/usr/bin/javac
+/usr/bin/javadoc
+/usr/bin/javah
+/usr/bin/javap
+/usr/bin/javaws
+/usr/bin/jbgtopbm
+/usr/bin/jbgtopbm85
+/usr/bin/jbig2dec
+/usr/bin/jbigtopnm
+/usr/bin/jcf-dump
+/usr/bin/jconsole
+/usr/bin/jcontrol
+/usr/bin/jdb
+/usr/bin/jhat
+/usr/bin/jinfo
+/usr/bin/jiv
+/usr/bin/jmap
+/usr/bin/join
+/usr/bin/jpeg2ktopam
+/usr/bin/jpeg2yuv
+/usr/bin/jpegexiforient
+/usr/bin/jpegicc
+/usr/bin/jpegtopnm
+/usr/bin/jpegtran
+/usr/bin/jpgicc
+/usr/bin/jps
+/usr/bin/jrunscript
+/usr/bin/jsadebugd
+/usr/bin/jsc-1
+/usr/bin/json_pp
+/usr/bin/json_pp-2.272.0-JSON-PP-2.272.0
+/usr/bin/jstack
+/usr/bin/jstat
+/usr/bin/jstatd
+/usr/bin/jv-convert
+/usr/bin/jvisualvm
+/usr/bin/kbd_mode
+/usr/bin/kbdinfo
+/usr/bin/kbdrate
+/usr/bin/kbxutil
+/usr/bin/kernel-config
+/usr/bin/keytool
+/usr/bin/killall
+/usr/bin/koi8rxterm
+/usr/bin/ksba-config
+/usr/bin/lame
+/usr/bin/last
+/usr/bin/lastb
+/usr/bin/lastcomm
+/usr/bin/lastlog
+/usr/bin/lav2avi.sh
+/usr/bin/lav2mpeg
+/usr/bin/lav2wav
+/usr/bin/lav2yuv
+/usr/bin/lavaddwav
+/usr/bin/lavinfo
+/usr/bin/lavpipe
+/usr/bin/lavplay
+/usr/bin/lavtc.sh
+/usr/bin/lavtrans
+/usr/bin/ld
+/usr/bin/ld.bfd
+/usr/bin/ld.gold
+/usr/bin/ldapadd
+/usr/bin/ldapcompare
+/usr/bin/ldapdelete
+/usr/bin/ldapexop
+/usr/bin/ldapmodify
+/usr/bin/ldapmodrdn
+/usr/bin/ldappasswd
+/usr/bin/ldapsearch
+/usr/bin/ldapurl
+/usr/bin/ldapwhoami
+/usr/bin/ldd
+/usr/bin/lddlibc4
+/usr/bin/lddtree
+/usr/bin/ldrdf
+/usr/bin/leaftoppm
+/usr/bin/lefty
+/usr/bin/less
+/usr/bin/lessecho
+/usr/bin/lesskey
+/usr/bin/lesspipe
+/usr/bin/lesspipe.sh
+/usr/bin/lex
+/usr/bin/libIDL-config-2
+/usr/bin/libart2-config
+/usr/bin/libassuan-config
+/usr/bin/libcdio-paranoia
+/usr/bin/libgcrypt-config
+/usr/bin/libglade-convert
+/usr/bin/libmikmod-config
+/usr/bin/libnetcfg
+/usr/bin/libnotify-notify-send
+/usr/bin/libpng-config
+/usr/bin/libpng15-config
+/usr/bin/libquicktime_config
+/usr/bin/libreoffice
+/usr/bin/libtool
+/usr/bin/libtoolize
+/usr/bin/libusb-config
+/usr/bin/libwmf-config
+/usr/bin/libwmf-fontmap
+/usr/bin/linc-cleanup-sockets
+/usr/bin/link
+/usr/bin/linkicc
+/usr/bin/linux32
+/usr/bin/linux64
+/usr/bin/lispmtopgm
+/usr/bin/lkbib
+/usr/bin/llc
+/usr/bin/lli
+/usr/bin/llvm-ar
+/usr/bin/llvm-as
+/usr/bin/llvm-bcanalyzer
+/usr/bin/llvm-config
+/usr/bin/llvm-cov
+/usr/bin/llvm-diff
+/usr/bin/llvm-dis
+/usr/bin/llvm-dwarfdump
+/usr/bin/llvm-extract
+/usr/bin/llvm-ld
+/usr/bin/llvm-link
+/usr/bin/llvm-mc
+/usr/bin/llvm-nm
+/usr/bin/llvm-objdump
+/usr/bin/llvm-prof
+/usr/bin/llvm-ranlib
+/usr/bin/llvm-readobj
+/usr/bin/llvm-rtdyld
+/usr/bin/llvm-size
+/usr/bin/llvm-stress
+/usr/bin/llvm-stub
+/usr/bin/llvm-tblgen
+/usr/bin/lneato
+/usr/bin/loadkeys
+/usr/bin/loadunimap
+/usr/bin/lobase
+/usr/bin/localc
+/usr/bin/locale
+/usr/bin/localedef
+/usr/bin/lockfile
+/usr/bin/lodraw
+/usr/bin/loffice
+/usr/bin/lofromtemplate
+/usr/bin/logger
+/usr/bin/logname
+/usr/bin/loimpress
+/usr/bin/lomath
+/usr/bin/look
+/usr/bin/lookbib
+/usr/bin/loweb
+/usr/bin/lowriter
+/usr/bin/lp
+/usr/bin/lp_demo
+/usr/bin/lp_solve
+/usr/bin/lpoptions
+/usr/bin/lppasswd
+/usr/bin/lpq
+/usr/bin/lpr
+/usr/bin/lprm
+/usr/bin/lprsetup.sh
+/usr/bin/lpstat
+/usr/bin/lqt_transcode
+/usr/bin/lqtplay
+/usr/bin/lqtremux
+/usr/bin/lrb
+/usr/bin/lrx
+/usr/bin/lrz
+/usr/bin/lsattr
+/usr/bin/lsb
+/usr/bin/lscpu
+/usr/bin/lslocks
+/usr/bin/lsof
+/usr/bin/lsusb
+/usr/bin/lsusb.py
+/usr/bin/lsx
+/usr/bin/lsz
+/usr/bin/luit
+/usr/bin/lwp-download
+/usr/bin/lwp-dump
+/usr/bin/lwp-mirror
+/usr/bin/lwp-request
+/usr/bin/lz
+/usr/bin/lzcat
+/usr/bin/lzcmp
+/usr/bin/lzdiff
+/usr/bin/lzegrep
+/usr/bin/lzfgrep
+/usr/bin/lzgrep
+/usr/bin/lzless
+/usr/bin/lzma
+/usr/bin/lzmadec
+/usr/bin/lzmainfo
+/usr/bin/lzmore
+/usr/bin/m4
+/usr/bin/macho-dump
+/usr/bin/macptopbm
+/usr/bin/magnifier
+/usr/bin/mahjongg
+/usr/bin/mail
+/usr/bin/mailq
+/usr/bin/mailserver
+/usr/bin/mailstat
+/usr/bin/mailto
+/usr/bin/mailto-hebrew
+/usr/bin/mailx
+/usr/bin/make
+/usr/bin/makealias
+/usr/bin/makeconv
+/usr/bin/makedb
+/usr/bin/makedepend
+/usr/bin/makeg
+/usr/bin/makeinfo
+/usr/bin/makemap
+/usr/bin/man
+/usr/bin/man2dvi
+/usr/bin/man2html
+/usr/bin/manpath
+/usr/bin/mapscrn
+/usr/bin/matteblend.flt
+/usr/bin/mattrib
+/usr/bin/mbadblocks
+/usr/bin/mcat
+/usr/bin/mcd
+/usr/bin/mcheck
+/usr/bin/mclasserase
+/usr/bin/mcomp
+/usr/bin/mcookie
+/usr/bin/mcopy
+/usr/bin/md5sum
+/usr/bin/mdatopbm
+/usr/bin/mdel
+/usr/bin/mdeltree
+/usr/bin/mdir
+/usr/bin/mdu
+/usr/bin/memusage
+/usr/bin/memusagestat
+/usr/bin/mencoder
+/usr/bin/merge
+/usr/bin/mergelib
+/usr/bin/mesg
+/usr/bin/metacity
+/usr/bin/metacity-message
+/usr/bin/metacity-theme-viewer
+/usr/bin/metacity-window-demo
+/usr/bin/metaflac
+/usr/bin/metamail
+/usr/bin/metasend
+/usr/bin/mformat
+/usr/bin/mgrtopbm
+/usr/bin/midentify
+/usr/bin/mimeit
+/usr/bin/mimencode
+/usr/bin/mimeopen
+/usr/bin/mimetype
+/usr/bin/minfo
+/usr/bin/mjpeg_simd_helper
+/usr/bin/mk_cmds
+/usr/bin/mkafmmap
+/usr/bin/mkdirhier
+/usr/bin/mkfifo
+/usr/bin/mkfontdir
+/usr/bin/mkfontscale
+/usr/bin/mkhtmlindex
+/usr/bin/mkhybrid
+/usr/bin/mkisofs
+/usr/bin/mkmanifest
+/usr/bin/mkpasswd
+/usr/bin/mktemp
+/usr/bin/mlabel
+/usr/bin/mlame
+/usr/bin/mm2gv
+/usr/bin/mmc-tool
+/usr/bin/mmd
+/usr/bin/mmount
+/usr/bin/mmove
+/usr/bin/mmroff
+/usr/bin/modeline2fb
+/usr/bin/mogrify
+/usr/bin/montage
+/usr/bin/mosml
+/usr/bin/mosmlc
+/usr/bin/mosmllex
+/usr/bin/mosmlyac
+/usr/bin/mousetweaks
+/usr/bin/mozplugger-controller
+/usr/bin/mozplugger-helper
+/usr/bin/mozplugger-linker
+/usr/bin/mp2enc
+/usr/bin/mpartition
+/usr/bin/mpc2sv8
+/usr/bin/mpcchap
+/usr/bin/mpccut
+/usr/bin/mpcdec
+/usr/bin/mpcenc
+/usr/bin/mpcgain
+/usr/bin/mpeg2dec
+/usr/bin/mpeg2desc
+/usr/bin/mpeg2enc
+/usr/bin/mpegtranscode
+/usr/bin/mpg123
+/usr/bin/mpg123-mpg123
+/usr/bin/mpiCC
+/usr/bin/mpic++
+/usr/bin/mpicc
+/usr/bin/mpicxx
+/usr/bin/mpiexec
+/usr/bin/mpif77
+/usr/bin/mpif90
+/usr/bin/mpirun
+/usr/bin/mplayer
+/usr/bin/mplex
+/usr/bin/mpstat
+/usr/bin/mrd
+/usr/bin/mren
+/usr/bin/mrftopbm
+/usr/bin/ms_print
+/usr/bin/msgattrib
+/usr/bin/msgcat
+/usr/bin/msgcmp
+/usr/bin/msgcomm
+/usr/bin/msgconv
+/usr/bin/msgen
+/usr/bin/msgexec
+/usr/bin/msgfilter
+/usr/bin/msgfmt
+/usr/bin/msggrep
+/usr/bin/msginit
+/usr/bin/msgmerge
+/usr/bin/msgunfmt
+/usr/bin/msguniq
+/usr/bin/mshortname
+/usr/bin/mshowfat
+/usr/bin/msiexec
+/usr/bin/msql2mysql
+/usr/bin/mtdev-test
+/usr/bin/mtools
+/usr/bin/mtoolstest
+/usr/bin/mtrace
+/usr/bin/mtvtoppm
+/usr/bin/mtype
+/usr/bin/multiblend.flt
+/usr/bin/munchlist
+/usr/bin/mutt
+/usr/bin/mutt_dotlock
+/usr/bin/muttbug
+/usr/bin/mwaw2html
+/usr/bin/mwaw2raw
+/usr/bin/mwaw2text
+/usr/bin/mwawFile
+/usr/bin/mwawZip
+/usr/bin/mwm
+/usr/bin/mxtar
+/usr/bin/my_print_defaults
+/usr/bin/myisam_ftdump
+/usr/bin/myisamchk
+/usr/bin/myisamlog
+/usr/bin/myisampack
+/usr/bin/mysql
+/usr/bin/mysql_client_test
+/usr/bin/mysql_config
+/usr/bin/mysql_convert_table_format
+/usr/bin/mysql_find_rows
+/usr/bin/mysql_fix_extensions
+/usr/bin/mysql_fix_privilege_tables
+/usr/bin/mysql_install_db
+/usr/bin/mysql_secure_installation
+/usr/bin/mysql_setpermission
+/usr/bin/mysql_tzinfo_to_sql
+/usr/bin/mysql_upgrade
+/usr/bin/mysql_waitpid
+/usr/bin/mysql_zap
+/usr/bin/mysqlaccess
+/usr/bin/mysqladmin
+/usr/bin/mysqlanalyze
+/usr/bin/mysqlbinlog
+/usr/bin/mysqlbug
+/usr/bin/mysqlcheck
+/usr/bin/mysqld_multi
+/usr/bin/mysqld_safe
+/usr/bin/mysqldump
+/usr/bin/mysqldumpslow
+/usr/bin/mysqlhotcopy
+/usr/bin/mysqlimport
+/usr/bin/mysqloptimize
+/usr/bin/mysqlrepair
+/usr/bin/mysqlshow
+/usr/bin/mysqlslap
+/usr/bin/mysqltest
+/usr/bin/mzip
+/usr/bin/namei
+/usr/bin/nasm
+/usr/bin/native2ascii
+/usr/bin/nautilus
+/usr/bin/nautilus-autorun-software
+/usr/bin/nautilus-connect-server
+/usr/bin/nautilus-file-management-properties
+/usr/bin/nc
+/usr/bin/ncurses5-config
+/usr/bin/ncursesw5-config
+/usr/bin/ndisasm
+/usr/bin/neato
+/usr/bin/neon-config
+/usr/bin/neotoppm
+/usr/bin/neqn
+/usr/bin/net
+/usr/bin/newaliases
+/usr/bin/newgrp
+/usr/bin/nex
+/usr/bin/nfsiostat
+/usr/bin/ngettext
+/usr/bin/nice
+/usr/bin/ninja
+/usr/bin/nisdomainname
+/usr/bin/nl
+/usr/bin/nm
+/usr/bin/nmblookup
+/usr/bin/nohup
+/usr/bin/nop
+/usr/bin/notepad
+/usr/bin/notification-properties
+/usr/bin/notify-send
+/usr/bin/nproc
+/usr/bin/nroff
+/usr/bin/nslookup
+/usr/bin/nspr-config
+/usr/bin/nss-config
+/usr/bin/nsupdate
+/usr/bin/ntfscat
+/usr/bin/ntfscluster
+/usr/bin/ntfscmp
+/usr/bin/ntfsdecrypt
+/usr/bin/ntfsdump_logfile
+/usr/bin/ntfsfix
+/usr/bin/ntfsinfo
+/usr/bin/ntfsls
+/usr/bin/ntfsmftalloc
+/usr/bin/ntfsmount
+/usr/bin/ntfsmove
+/usr/bin/ntfstruncate
+/usr/bin/ntfswipe
+/usr/bin/numlockx
+/usr/bin/nvi
+/usr/bin/nview
+/usr/bin/objcopy
+/usr/bin/objdump
+/usr/bin/ocs
+/usr/bin/od
+/usr/bin/odbc_config
+/usr/bin/odbcinst
+/usr/bin/ode
+/usr/bin/ogonkify
+/usr/bin/oldfind
+/usr/bin/ompi-clean
+/usr/bin/ompi-iof
+/usr/bin/ompi-ps
+/usr/bin/ompi-server
+/usr/bin/ompi_info
+/usr/bin/ootags
+/usr/bin/opal_wrapper
+/usr/bin/openssl
+/usr/bin/openvt
+/usr/bin/opt
+/usr/bin/orbd
+/usr/bin/orbit-idl-2
+/usr/bin/orbit2-config
+/usr/bin/orc-bugreport
+/usr/bin/orca
+/usr/bin/orcc
+/usr/bin/orcus-csv
+/usr/bin/orcus-gnumeric
+/usr/bin/orcus-mso-encryption
+/usr/bin/orcus-ods
+/usr/bin/orcus-xlsx
+/usr/bin/orcus-xml
+/usr/bin/orcus-xml-dump
+/usr/bin/orcus-zip-dump
+/usr/bin/orte-clean
+/usr/bin/orte-iof
+/usr/bin/orte-ps
+/usr/bin/orted
+/usr/bin/orterun
+/usr/bin/osage
+/usr/bin/over
+/usr/bin/pack200
+/usr/bin/pal2rgb
+/usr/bin/palmtopnm
+/usr/bin/pamaddnoise
+/usr/bin/pamarith
+/usr/bin/pambackground
+/usr/bin/pambayer
+/usr/bin/pamchannel
+/usr/bin/pamcomp
+/usr/bin/pamcut
+/usr/bin/pamdeinterlace
+/usr/bin/pamdepth
+/usr/bin/pamdice
+/usr/bin/pamditherbw
+/usr/bin/pamedge
+/usr/bin/pamendian
+/usr/bin/pamenlarge
+/usr/bin/pamfile
+/usr/bin/pamfixtrunc
+/usr/bin/pamflip
+/usr/bin/pamfunc
+/usr/bin/pamgauss
+/usr/bin/pamgradient
+/usr/bin/pamlookup
+/usr/bin/pammasksharpen
+/usr/bin/pammixinterlace
+/usr/bin/pamoil
+/usr/bin/pampaintspill
+/usr/bin/pamperspective
+/usr/bin/pampick
+/usr/bin/pampop9
+/usr/bin/pamrgbatopng
+/usr/bin/pamscale
+/usr/bin/pamseq
+/usr/bin/pamsharpmap
+/usr/bin/pamsharpness
+/usr/bin/pamsistoaglyph
+/usr/bin/pamslice
+/usr/bin/pamsplit
+/usr/bin/pamstack
+/usr/bin/pamstereogram
+/usr/bin/pamstretch
+/usr/bin/pamstretch-gen
+/usr/bin/pamsumm
+/usr/bin/pamsummcol
+/usr/bin/pamthreshold
+/usr/bin/pamtilt
+/usr/bin/pamtoavs
+/usr/bin/pamtodjvurle
+/usr/bin/pamtofits
+/usr/bin/pamtogif
+/usr/bin/pamtohdiff
+/usr/bin/pamtohtmltbl
+/usr/bin/pamtojpeg2k
+/usr/bin/pamtompfont
+/usr/bin/pamtooctaveimg
+/usr/bin/pamtopam
+/usr/bin/pamtopfm
+/usr/bin/pamtopnm
+/usr/bin/pamtosvg
+/usr/bin/pamtotga
+/usr/bin/pamtotiff
+/usr/bin/pamtouil
+/usr/bin/pamtoxvmini
+/usr/bin/pamundice
+/usr/bin/pamx
+/usr/bin/panel-test-applets
+/usr/bin/panel-test-applets-bonobo
+/usr/bin/pango-querymodules
+/usr/bin/pango-view
+/usr/bin/paperconf
+/usr/bin/passwd
+/usr/bin/paste
+/usr/bin/patch
+/usr/bin/patch-metamail
+/usr/bin/pathchk
+/usr/bin/pbmclean
+/usr/bin/pbmlife
+/usr/bin/pbmmake
+/usr/bin/pbmmask
+/usr/bin/pbmminkowski
+/usr/bin/pbmpage
+/usr/bin/pbmpscale
+/usr/bin/pbmreduce
+/usr/bin/pbmtext
+/usr/bin/pbmtextps
+/usr/bin/pbmto10x
+/usr/bin/pbmto4425
+/usr/bin/pbmtoascii
+/usr/bin/pbmtoatk
+/usr/bin/pbmtobbnbg
+/usr/bin/pbmtocis
+/usr/bin/pbmtocmuwm
+/usr/bin/pbmtodjvurle
+/usr/bin/pbmtoepsi
+/usr/bin/pbmtoepson
+/usr/bin/pbmtoescp2
+/usr/bin/pbmtog3
+/usr/bin/pbmtogem
+/usr/bin/pbmtogo
+/usr/bin/pbmtoibm23xx
+/usr/bin/pbmtoicon
+/usr/bin/pbmtojbg
+/usr/bin/pbmtojbg85
+/usr/bin/pbmtolj
+/usr/bin/pbmtoln03
+/usr/bin/pbmtolps
+/usr/bin/pbmtomacp
+/usr/bin/pbmtomatrixorbital
+/usr/bin/pbmtomda
+/usr/bin/pbmtomgr
+/usr/bin/pbmtomrf
+/usr/bin/pbmtonokia
+/usr/bin/pbmtopgm
+/usr/bin/pbmtopi3
+/usr/bin/pbmtopk
+/usr/bin/pbmtoplot
+/usr/bin/pbmtoppa
+/usr/bin/pbmtopsg3
+/usr/bin/pbmtoptx
+/usr/bin/pbmtowbmp
+/usr/bin/pbmtox10bm
+/usr/bin/pbmtoxbm
+/usr/bin/pbmtoybm
+/usr/bin/pbmtozinc
+/usr/bin/pbmupc
+/usr/bin/pc1toppm
+/usr/bin/pcap-config
+/usr/bin/pcdovtoppm
+/usr/bin/pcprofiledump
+/usr/bin/pcre-config
+/usr/bin/pcregrep
+/usr/bin/pcretest
+/usr/bin/pcxtoppm
+/usr/bin/pdbedit
+/usr/bin/pdf2dsc
+/usr/bin/pdf2ps
+/usr/bin/pdfdetach
+/usr/bin/pdffonts
+/usr/bin/pdfimages
+/usr/bin/pdfinfo
+/usr/bin/pdfmom
+/usr/bin/pdfopt
+/usr/bin/pdfroff
+/usr/bin/pdfseparate
+/usr/bin/pdftexi2dvi
+/usr/bin/pdftocairo
+/usr/bin/pdftohtml
+/usr/bin/pdftoppm
+/usr/bin/pdftops
+/usr/bin/pdftotext
+/usr/bin/pdfunite
+/usr/bin/pdiff
+/usr/bin/peekfd
+/usr/bin/perl
+/usr/bin/perl5.12.4
+/usr/bin/perlbug
+/usr/bin/perldoc
+/usr/bin/perlivp
+/usr/bin/perlthanks
+/usr/bin/perror
+/usr/bin/pf2afm
+/usr/bin/pfbtopfa
+/usr/bin/pfbtops
+/usr/bin/pfmtopam
+/usr/bin/pg
+/usr/bin/pgawk
+/usr/bin/pgmabel
+/usr/bin/pgmbentley
+/usr/bin/pgmcrater
+/usr/bin/pgmdeshadow
+/usr/bin/pgmedge
+/usr/bin/pgmenhance
+/usr/bin/pgmhist
+/usr/bin/pgmkernel
+/usr/bin/pgmmake
+/usr/bin/pgmmedian
+/usr/bin/pgmminkowski
+/usr/bin/pgmmorphconv
+/usr/bin/pgmnoise
+/usr/bin/pgmnorm
+/usr/bin/pgmoil
+/usr/bin/pgmramp
+/usr/bin/pgmslice
+/usr/bin/pgmtexture
+/usr/bin/pgmtofs
+/usr/bin/pgmtolispm
+/usr/bin/pgmtopbm
+/usr/bin/pgmtopgm
+/usr/bin/pgmtoppm
+/usr/bin/pgmtoy4m
+/usr/bin/pgpewrap
+/usr/bin/pgpring
+/usr/bin/pgrep
+/usr/bin/pi1toppm
+/usr/bin/pi3topbm
+/usr/bin/pic
+/usr/bin/pic2graph
+/usr/bin/pic2plot
+/usr/bin/pic2tpic
+/usr/bin/pico
+/usr/bin/piconv
+/usr/bin/piconv-2.39-perl-5.12.4
+/usr/bin/piconv-2.470.0-Encode-2.470.0
+/usr/bin/picttoppm
+/usr/bin/pidgin
+/usr/bin/pidstat
+/usr/bin/pilot
+/usr/bin/pinentry
+/usr/bin/pinentry-curses
+/usr/bin/pinentry-gtk-2
+/usr/bin/pinky
+/usr/bin/pjtoppm
+/usr/bin/pkg-config
+/usr/bin/pkgdata
+/usr/bin/pkill
+/usr/bin/pktopbm
+/usr/bin/pl2pm
+/usr/bin/pldd
+/usr/bin/plot
+/usr/bin/plotfont
+/usr/bin/pmap
+/usr/bin/png2yuv
+/usr/bin/pngtogd
+/usr/bin/pngtogd2
+/usr/bin/pngtopam
+/usr/bin/pngtopnm
+/usr/bin/pnmalias
+/usr/bin/pnmarith
+/usr/bin/pnmcat
+/usr/bin/pnmcolormap
+/usr/bin/pnmcomp
+/usr/bin/pnmconvol
+/usr/bin/pnmcrop
+/usr/bin/pnmcut
+/usr/bin/pnmdepth
+/usr/bin/pnmenlarge
+/usr/bin/pnmfile
+/usr/bin/pnmflip
+/usr/bin/pnmgamma
+/usr/bin/pnmhisteq
+/usr/bin/pnmhistmap
+/usr/bin/pnmindex
+/usr/bin/pnminterp
+/usr/bin/pnminvert
+/usr/bin/pnmmargin
+/usr/bin/pnmmercator
+/usr/bin/pnmmontage
+/usr/bin/pnmnlfilt
+/usr/bin/pnmnoraw
+/usr/bin/pnmnorm
+/usr/bin/pnmpad
+/usr/bin/pnmpaste
+/usr/bin/pnmpsnr
+/usr/bin/pnmquant
+/usr/bin/pnmremap
+/usr/bin/pnmrotate
+/usr/bin/pnmscale
+/usr/bin/pnmscalefixed
+/usr/bin/pnmshear
+/usr/bin/pnmsmooth
+/usr/bin/pnmsplit
+/usr/bin/pnmstitch
+/usr/bin/pnmtile
+/usr/bin/pnmtoddif
+/usr/bin/pnmtofits
+/usr/bin/pnmtojbig
+/usr/bin/pnmtojpeg
+/usr/bin/pnmtopalm
+/usr/bin/pnmtopclxl
+/usr/bin/pnmtoplainpnm
+/usr/bin/pnmtopng
+/usr/bin/pnmtopnm
+/usr/bin/pnmtops
+/usr/bin/pnmtorast
+/usr/bin/pnmtosgi
+/usr/bin/pnmtosir
+/usr/bin/pnmtotiff
+/usr/bin/pnmtotiffcmyk
+/usr/bin/pnmtoxwd
+/usr/bin/pnmtoy4m
+/usr/bin/pod2html
+/usr/bin/pod2latex
+/usr/bin/pod2man
+/usr/bin/pod2man-2.3.1-perl-5.12.4
+/usr/bin/pod2text
+/usr/bin/pod2text-2.3.1-perl-5.12.4
+/usr/bin/pod2usage
+/usr/bin/pod2usage-1.370.0-perl-5.12.4
+/usr/bin/podchecker
+/usr/bin/podchecker-1.370.0-perl-5.12.4
+/usr/bin/podselect
+/usr/bin/podselect-1.370.0-perl-5.12.4
+/usr/bin/pointer-capture-applet
+/usr/bin/policytool
+/usr/bin/portageq
+/usr/bin/post-grohtml
+/usr/bin/ppdc
+/usr/bin/ppdhtml
+/usr/bin/ppdi
+/usr/bin/ppdmerge
+/usr/bin/ppdpo
+/usr/bin/pphs
+/usr/bin/ppm2tiff
+/usr/bin/ppm3d
+/usr/bin/ppmbrighten
+/usr/bin/ppmchange
+/usr/bin/ppmcie
+/usr/bin/ppmcolormask
+/usr/bin/ppmcolors
+/usr/bin/ppmdcfont
+/usr/bin/ppmddumpfont
+/usr/bin/ppmdim
+/usr/bin/ppmdist
+/usr/bin/ppmdither
+/usr/bin/ppmdmkfont
+/usr/bin/ppmdraw
+/usr/bin/ppmfade
+/usr/bin/ppmflash
+/usr/bin/ppmforge
+/usr/bin/ppmglobe
+/usr/bin/ppmhist
+/usr/bin/ppmlabel
+/usr/bin/ppmmake
+/usr/bin/ppmmix
+/usr/bin/ppmnorm
+/usr/bin/ppmntsc
+/usr/bin/ppmpat
+/usr/bin/ppmquant
+/usr/bin/ppmquantall
+/usr/bin/ppmrainbow
+/usr/bin/ppmrelief
+/usr/bin/ppmrough
+/usr/bin/ppmshadow
+/usr/bin/ppmshift
+/usr/bin/ppmspread
+/usr/bin/ppmtoacad
+/usr/bin/ppmtoarbtxt
+/usr/bin/ppmtoascii
+/usr/bin/ppmtobmp
+/usr/bin/ppmtoeyuv
+/usr/bin/ppmtogif
+/usr/bin/ppmtoicr
+/usr/bin/ppmtoilbm
+/usr/bin/ppmtojpeg
+/usr/bin/ppmtoleaf
+/usr/bin/ppmtolj
+/usr/bin/ppmtomap
+/usr/bin/ppmtomitsu
+/usr/bin/ppmtompeg
+/usr/bin/ppmtoneo
+/usr/bin/ppmtopcx
+/usr/bin/ppmtopgm
+/usr/bin/ppmtopi1
+/usr/bin/ppmtopict
+/usr/bin/ppmtopj
+/usr/bin/ppmtopjxl
+/usr/bin/ppmtoppm
+/usr/bin/ppmtopuzz
+/usr/bin/ppmtorgb3
+/usr/bin/ppmtosixel
+/usr/bin/ppmtoterm
+/usr/bin/ppmtouil
+/usr/bin/ppmtowinicon
+/usr/bin/ppmtoxpm
+/usr/bin/ppmtoy4m
+/usr/bin/ppmtoyuv
+/usr/bin/ppmtoyuvsplit
+/usr/bin/ppmtv
+/usr/bin/ppmwheel
+/usr/bin/pr
+/usr/bin/pre-grohtml
+/usr/bin/precat
+/usr/bin/preconv
+/usr/bin/preunzip
+/usr/bin/prezip
+/usr/bin/prezip-bin
+/usr/bin/printafm
+/usr/bin/printenv
+/usr/bin/printf
+/usr/bin/prlimit
+/usr/bin/procmail
+/usr/bin/profile-config
+/usr/bin/profiles
+/usr/bin/protoc
+/usr/bin/prove
+/usr/bin/prove-3.17-perl-5.12.4
+/usr/bin/prove-3.260.0-Test-Harness-3.260.0
+/usr/bin/prtstat
+/usr/bin/prune
+/usr/bin/ps2ascii
+/usr/bin/ps2epsi
+/usr/bin/ps2pdf
+/usr/bin/ps2pdf12
+/usr/bin/ps2pdf13
+/usr/bin/ps2pdf14
+/usr/bin/ps2pdfwr
+/usr/bin/ps2ps
+/usr/bin/ps2ps2
+/usr/bin/psbook
+/usr/bin/psed
+/usr/bin/psfaddtable
+/usr/bin/psfgettable
+/usr/bin/psfstriptable
+/usr/bin/psfxtable
+/usr/bin/psicc
+/usr/bin/psidtopgm
+/usr/bin/psktool
+/usr/bin/psmandup
+/usr/bin/psmerge
+/usr/bin/psnup
+/usr/bin/pspax
+/usr/bin/pspell-config
+/usr/bin/psresize
+/usr/bin/psselect
+/usr/bin/psset
+/usr/bin/pstopnm
+/usr/bin/pstops
+/usr/bin/pstree
+/usr/bin/pstree.x11
+/usr/bin/pstruct
+/usr/bin/ptar
+/usr/bin/ptar-1.54-perl-5.12.4
+/usr/bin/ptar-1.900.0-Archive-Tar-1.900.0
+/usr/bin/ptardiff
+/usr/bin/ptardiff-1.54-perl-5.12.4
+/usr/bin/ptardiff-1.900.0-Archive-Tar-1.900.0
+/usr/bin/ptargrep
+/usr/bin/ptargrep-1.900.0-Archive-Tar-1.900.0
+/usr/bin/pth-config
+/usr/bin/ptked
+/usr/bin/ptksh
+/usr/bin/ptx
+/usr/bin/pub2raw
+/usr/bin/pub2xhtml
+/usr/bin/purgestat
+/usr/bin/pwdx
+/usr/bin/pydoc
+/usr/bin/pydoc2.7
+/usr/bin/pydoc3.3
+/usr/bin/pygobject-codegen-2.0
+/usr/bin/pygtk-codegen-2.0
+/usr/bin/python
+/usr/bin/python-config
+/usr/bin/python-config-2.7
+/usr/bin/python-config-3.3
+/usr/bin/python-exec
+/usr/bin/python-exec-c
+/usr/bin/python-wrapper
+/usr/bin/python2
+/usr/bin/python2.7
+/usr/bin/python2.7-config
+/usr/bin/python3
+/usr/bin/python3.3
+/usr/bin/python3.3-config
+/usr/bin/pyvenv-3.3
+/usr/bin/q
+/usr/bin/qatom
+/usr/bin/qcache
+/usr/bin/qcheck
+/usr/bin/qdepends
+/usr/bin/qfile
+/usr/bin/qgrep
+/usr/bin/qlist
+/usr/bin/qlop
+/usr/bin/qmerge
+/usr/bin/qpkg
+/usr/bin/qrttoppm
+/usr/bin/qsearch
+/usr/bin/qsize
+/usr/bin/qt2text
+/usr/bin/qtbz2
+/usr/bin/qtdechunk
+/usr/bin/qtdump
+/usr/bin/qtinfo
+/usr/bin/qtrechunk
+/usr/bin/qtstreamize
+/usr/bin/qttoy4m
+/usr/bin/qtyuv4toyuv
+/usr/bin/quickpkg
+/usr/bin/quota
+/usr/bin/quotasync
+/usr/bin/quse
+/usr/bin/qxpak
+/usr/bin/ragel
+/usr/bin/rake
+/usr/bin/ranlib
+/usr/bin/rapper
+/usr/bin/rarian-example
+/usr/bin/rarian-sk-config
+/usr/bin/rarian-sk-extract
+/usr/bin/rarian-sk-gen-uuid
+/usr/bin/rarian-sk-get-cl
+/usr/bin/rarian-sk-get-content-list
+/usr/bin/rarian-sk-get-extended-content-list
+/usr/bin/rarian-sk-get-scripts
+/usr/bin/rarian-sk-install
+/usr/bin/rarian-sk-migrate
+/usr/bin/rarian-sk-preinstall
+/usr/bin/rarian-sk-rebuild
+/usr/bin/rarian-sk-update
+/usr/bin/ras2tiff
+/usr/bin/rasqal-config
+/usr/bin/rasttopnm
+/usr/bin/raw2gif
+/usr/bin/raw2tiff
+/usr/bin/rawtopgm
+/usr/bin/rawtoppm
+/usr/bin/rb
+/usr/bin/rc-config
+/usr/bin/rcp
+/usr/bin/rcs
+/usr/bin/rcs-checkin-xemacs
+/usr/bin/rcs2log
+/usr/bin/rcsclean
+/usr/bin/rcsdiff
+/usr/bin/rcsmerge
+/usr/bin/rcvAppleSingle
+/usr/bin/rdesktop
+/usr/bin/rdf2bin
+/usr/bin/rdf2com
+/usr/bin/rdf2ihx
+/usr/bin/rdf2ith
+/usr/bin/rdf2srec
+/usr/bin/rdfdump
+/usr/bin/rdflib
+/usr/bin/rdfproc
+/usr/bin/rdist
+/usr/bin/rdistd
+/usr/bin/rdjpgcom
+/usr/bin/rdoc
+/usr/bin/rdoc18
+/usr/bin/rdx
+/usr/bin/re2c
+/usr/bin/readcd
+/usr/bin/readelf
+/usr/bin/readelf.py
+/usr/bin/readlink
+/usr/bin/realpath
+/usr/bin/rebuild-gcj-db
+/usr/bin/recode-sr-latin
+/usr/bin/redland-config
+/usr/bin/redland-db-upgrade
+/usr/bin/refer
+/usr/bin/regedit
+/usr/bin/regsvr32
+/usr/bin/rename
+/usr/bin/renice
+/usr/bin/replace
+/usr/bin/repoman
+/usr/bin/reset
+/usr/bin/resize
+/usr/bin/resolve_stack_dump
+/usr/bin/resolveip
+/usr/bin/rev
+/usr/bin/revdep-rebuild
+/usr/bin/revdep-rebuild.py
+/usr/bin/revdep-rebuild.sh
+/usr/bin/revpath
+/usr/bin/rexec
+/usr/bin/rgb2gif
+/usr/bin/rgb2ycbcr
+/usr/bin/rgb3toppm
+/usr/bin/rgview
+/usr/bin/rgvim
+/usr/bin/ri
+/usr/bin/ri18
+/usr/bin/richtext
+/usr/bin/richtoatk
+/usr/bin/rlatopam
+/usr/bin/rlfe
+/usr/bin/rlog
+/usr/bin/rlogin
+/usr/bin/rlwrap
+/usr/bin/rmail
+/usr/bin/rman
+/usr/bin/rmic
+/usr/bin/rmid
+/usr/bin/rmiregistry
+/usr/bin/roff2dvi
+/usr/bin/roff2html
+/usr/bin/roff2pdf
+/usr/bin/roff2ps
+/usr/bin/roff2text
+/usr/bin/roff2x
+/usr/bin/roqet
+/usr/bin/rpcclient
+/usr/bin/rpcgen
+/usr/bin/rpdump
+/usr/bin/rpload
+/usr/bin/rpm2tar
+/usr/bin/rpm2tarbz2
+/usr/bin/rpm2targz
+/usr/bin/rpm2tarlzma
+/usr/bin/rpm2tarxz
+/usr/bin/rpm2tbz2
+/usr/bin/rpm2tgz
+/usr/bin/rpm2txz
+/usr/bin/rpmoffset
+/usr/bin/rpmunpack
+/usr/bin/rsh
+/usr/bin/rsvg-convert
+/usr/bin/rsync
+/usr/bin/ruby
+/usr/bin/ruby18
+/usr/bin/ruby19
+/usr/bin/ruby20
+/usr/bin/run-java-tool
+/usr/bin/run-with-aspell
+/usr/bin/runant.pl
+/usr/bin/runant.py
+/usr/bin/runcon
+/usr/bin/runghc
+/usr/bin/runghc-7.6.3
+/usr/bin/runhaskell
+/usr/bin/rview
+/usr/bin/rvim
+/usr/bin/rx
+/usr/bin/rz
+/usr/bin/s2p
+/usr/bin/sadf
+/usr/bin/same-gnome
+/usr/bin/sandbox
+/usr/bin/sar
+/usr/bin/sb
+/usr/bin/sbigtopgm
+/usr/bin/scanelf
+/usr/bin/scanmacho
+/usr/bin/scanpci
+/usr/bin/sccmap
+/usr/bin/scgcheck
+/usr/bin/scgskeleton
+/usr/bin/schemagen
+/usr/bin/scp
+/usr/bin/screen
+/usr/bin/script
+/usr/bin/scriptreplay
+/usr/bin/scrollkeeper-config
+/usr/bin/scrollkeeper-extract
+/usr/bin/scrollkeeper-gen-seriesid
+/usr/bin/scrollkeeper-get-cl
+/usr/bin/scrollkeeper-get-content-list
+/usr/bin/scrollkeeper-get-extended-content-list
+/usr/bin/scrollkeeper-get-index-from-docpath
+/usr/bin/scrollkeeper-get-toc-from-docpath
+/usr/bin/scrollkeeper-get-toc-from-id
+/usr/bin/scrollkeeper-install
+/usr/bin/scrollkeeper-preinstall
+/usr/bin/scrollkeeper-rebuilddb
+/usr/bin/scrollkeeper-uninstall
+/usr/bin/scrollkeeper-update
+/usr/bin/sdiff
+/usr/bin/sdl-config
+/usr/bin/sdp-example
+/usr/bin/seahorse
+/usr/bin/seahorse-daemon
+/usr/bin/seq
+/usr/bin/serialver
+/usr/bin/servertool
+/usr/bin/sessreg
+/usr/bin/setarch
+/usr/bin/setfont
+/usr/bin/setkeycodes
+/usr/bin/setleds
+/usr/bin/setmetamode
+/usr/bin/setsid
+/usr/bin/setterm
+/usr/bin/setvtrgb
+/usr/bin/setxkbmap
+/usr/bin/sfconvert
+/usr/bin/sfdp
+/usr/bin/sfinfo
+/usr/bin/sftp
+/usr/bin/sg
+/usr/bin/sgitopnm
+/usr/bin/sgmlwhich
+/usr/bin/sha1sum
+/usr/bin/sha224sum
+/usr/bin/sha256sum
+/usr/bin/sha384sum
+/usr/bin/sha512sum
+/usr/bin/shar
+/usr/bin/sharesec
+/usr/bin/shasum
+/usr/bin/shasum-5.47-perl-5.12.4
+/usr/bin/shlibsign
+/usr/bin/showaudio
+/usr/bin/showchar
+/usr/bin/showconsolefont
+/usr/bin/showexternal
+/usr/bin/showkey
+/usr/bin/shownonascii
+/usr/bin/showpartial
+/usr/bin/showpicture
+/usr/bin/showrgb
+/usr/bin/shred
+/usr/bin/shuf
+/usr/bin/simple-example
+/usr/bin/sirtopnm
+/usr/bin/size
+/usr/bin/slabtop
+/usr/bin/sldtoppm
+/usr/bin/sleep
+/usr/bin/sliceprint
+/usr/bin/slogin
+/usr/bin/smbcacls
+/usr/bin/smbclient
+/usr/bin/smbcontrol
+/usr/bin/smbcquotas
+/usr/bin/smbget
+/usr/bin/smbpasswd
+/usr/bin/smbspool
+/usr/bin/smbstatus
+/usr/bin/smbta-util
+/usr/bin/smbtree
+/usr/bin/smproxy
+/usr/bin/sndAppleSingle
+/usr/bin/sndfile-cmp
+/usr/bin/sndfile-concat
+/usr/bin/sndfile-convert
+/usr/bin/sndfile-deinterleave
+/usr/bin/sndfile-info
+/usr/bin/sndfile-interleave
+/usr/bin/sndfile-metadata-get
+/usr/bin/sndfile-metadata-set
+/usr/bin/sndfile-play
+/usr/bin/sndfile-salvage
+/usr/bin/soelim
+/usr/bin/soffice
+/usr/bin/sort
+/usr/bin/sotruss
+/usr/bin/spctoppm
+/usr/bin/spd-conf
+/usr/bin/spd-say
+/usr/bin/spdsend
+/usr/bin/speaker-test
+/usr/bin/speech-dispatcher
+/usr/bin/speechd-synthesis-driver
+/usr/bin/speexdec
+/usr/bin/speexenc
+/usr/bin/spell-aspell
+/usr/bin/spim
+/usr/bin/splain
+/usr/bin/spline
+/usr/bin/split
+/usr/bin/splitmail
+/usr/bin/spottopgm
+/usr/bin/sprof
+/usr/bin/spumux
+/usr/bin/sputoppm
+/usr/bin/spuunmux
+/usr/bin/sq
+/usr/bin/sqlite3
+/usr/bin/srptool
+/usr/bin/ssh
+/usr/bin/ssh-add
+/usr/bin/ssh-agent
+/usr/bin/ssh-copy-id
+/usr/bin/ssh-keygen
+/usr/bin/ssh-keyscan
+/usr/bin/startx
+/usr/bin/stat
+/usr/bin/states
+/usr/bin/stdbuf
+/usr/bin/strace
+/usr/bin/strace-graph
+/usr/bin/strace-log-merge
+/usr/bin/stream
+/usr/bin/strings
+/usr/bin/strip
+/usr/bin/stunbdc
+/usr/bin/stund
+/usr/bin/substrings.pl
+/usr/bin/sudo
+/usr/bin/sudoedit
+/usr/bin/sudoreplay
+/usr/bin/sum
+/usr/bin/sun-audio-file
+/usr/bin/sun-message
+/usr/bin/sun-message.csh
+/usr/bin/sun-to-mime
+/usr/bin/sun2mime
+/usr/bin/svgtopam
+/usr/bin/svn
+/usr/bin/svn-hot-backup
+/usr/bin/svnadmin
+/usr/bin/svndumpfilter
+/usr/bin/svnlook
+/usr/bin/svnrdump
+/usr/bin/svnserve
+/usr/bin/svnsync
+/usr/bin/svnversion
+/usr/bin/swig
+/usr/bin/sx
+/usr/bin/sxpm
+/usr/bin/symcryptrun
+/usr/bin/symtree
+/usr/bin/synclient
+/usr/bin/syndaemon
+/usr/bin/sz
+/usr/bin/tabs
+/usr/bin/tac
+/usr/bin/taglib-config
+/usr/bin/tail
+/usr/bin/tailf
+/usr/bin/taskset
+/usr/bin/tbl
+/usr/bin/tclsh
+/usr/bin/tclsh8.5
+/usr/bin/tdbbackup
+/usr/bin/tdbdump
+/usr/bin/tdbrestore
+/usr/bin/tdbtool
+/usr/bin/tee
+/usr/bin/tek2plot
+/usr/bin/telnet
+/usr/bin/test
+/usr/bin/test-speech
+/usr/bin/testparm
+/usr/bin/testrb
+/usr/bin/testrb18
+/usr/bin/testrb19
+/usr/bin/testrb20
+/usr/bin/texi2dvi
+/usr/bin/texi2dvi4a2ps
+/usr/bin/texi2html
+/usr/bin/texi2pdf
+/usr/bin/texindex
+/usr/bin/texinfo2man
+/usr/bin/text2gif
+/usr/bin/tfmtodit
+/usr/bin/tgatoppm
+/usr/bin/tgz
+/usr/bin/th_gen_idx.pl
+/usr/bin/thinkjettopbm
+/usr/bin/threaded-example
+/usr/bin/thumbnail
+/usr/bin/thunderbird
+/usr/bin/tic
+/usr/bin/tiff2bw
+/usr/bin/tiff2pdf
+/usr/bin/tiff2ps
+/usr/bin/tiff2rgba
+/usr/bin/tiffcmp
+/usr/bin/tiffcp
+/usr/bin/tiffcrop
+/usr/bin/tiffdiff
+/usr/bin/tiffdither
+/usr/bin/tiffdump
+/usr/bin/tifficc
+/usr/bin/tiffinfo
+/usr/bin/tiffmedian
+/usr/bin/tiffset
+/usr/bin/tiffsplit
+/usr/bin/tifftopnm
+/usr/bin/tificc
+/usr/bin/tightvnc-java
+/usr/bin/time
+/usr/bin/timeout
+/usr/bin/tjbench
+/usr/bin/tkjpeg
+/usr/bin/tload
+/usr/bin/tmrdemo
+/usr/bin/tmux
+/usr/bin/tnameserv
+/usr/bin/toc2cddb
+/usr/bin/toc2cue
+/usr/bin/toc2mp3
+/usr/bin/toe
+/usr/bin/top
+/usr/bin/touch
+/usr/bin/tput
+/usr/bin/tr
+/usr/bin/traceroute
+/usr/bin/transfig
+/usr/bin/transicc
+/usr/bin/transist.flt
+/usr/bin/tred
+/usr/bin/troff
+/usr/bin/truncate
+/usr/bin/tryaffix
+/usr/bin/tset
+/usr/bin/tsort
+/usr/bin/tty
+/usr/bin/twm
+/usr/bin/twolame
+/usr/bin/twopi
+/usr/bin/tzselect
+/usr/bin/uconv
+/usr/bin/ucpp
+/usr/bin/ucs2any
+/usr/bin/udevinfo
+/usr/bin/uil
+/usr/bin/ul
+/usr/bin/ulockmgr_server
+/usr/bin/uname
+/usr/bin/uncompface
+/usr/bin/uncompress
+/usr/bin/unexpand
+/usr/bin/unflatten
+/usr/bin/unicode_start
+/usr/bin/unicode_stop
+/usr/bin/uniq
+/usr/bin/unix-lpr.sh
+/usr/bin/unlink
+/usr/bin/unlzma
+/usr/bin/unopkg
+/usr/bin/unrar
+/usr/bin/unshar
+/usr/bin/unshare
+/usr/bin/unsq
+/usr/bin/unxz
+/usr/bin/unzip
+/usr/bin/unzipsfx
+/usr/bin/update-desktop-database
+/usr/bin/update-mime-database
+/usr/bin/uptime
+/usr/bin/usb-devices
+/usr/bin/usbhid-dump
+/usr/bin/users
+/usr/bin/utmpdump
+/usr/bin/uudecode
+/usr/bin/uudepipe
+/usr/bin/uuencode
+/usr/bin/uuenpipe
+/usr/bin/uufilter
+/usr/bin/uuidgen
+/usr/bin/uxterm
+/usr/bin/uz
+/usr/bin/vacation
+/usr/bin/valgrind
+/usr/bin/valgrind-listener
+/usr/bin/vcd-info
+/usr/bin/vcdimager
+/usr/bin/vcdxbuild
+/usr/bin/vcdxgen
+/usr/bin/vcdxminfo
+/usr/bin/vcdxrip
+/usr/bin/vdcomp
+/usr/bin/vdir
+/usr/bin/vgdb
+/usr/bin/vi
+/usr/bin/view
+/usr/bin/vim
+/usr/bin/vimdiff
+/usr/bin/vimdot
+/usr/bin/vimtutor
+/usr/bin/vinagre
+/usr/bin/vmstat
+/usr/bin/vncconnect
+/usr/bin/vncpasswd
+/usr/bin/vncserver
+/usr/bin/vncviewer
+/usr/bin/vp8_scalable_patterns
+/usr/bin/vpxdec
+/usr/bin/vpxenc
+/usr/bin/vsd2raw
+/usr/bin/vsd2text
+/usr/bin/vsd2xhtml
+/usr/bin/vss2raw
+/usr/bin/vss2text
+/usr/bin/vss2xhtml
+/usr/bin/vsyasm
+/usr/bin/vte
+/usr/bin/w
+/usr/bin/wall
+/usr/bin/watch
+/usr/bin/watchgnupg
+/usr/bin/wavcmp
+/usr/bin/wavpack
+/usr/bin/wbmptopbm
+/usr/bin/wc
+/usr/bin/wdiff
+/usr/bin/webpng
+/usr/bin/wfica
+/usr/bin/wftopfa
+/usr/bin/wget
+/usr/bin/whatis
+/usr/bin/whereis
+/usr/bin/which
+/usr/bin/who
+/usr/bin/whoami
+/usr/bin/whois
+/usr/bin/widget
+/usr/bin/widl
+/usr/bin/wine
+/usr/bin/wine-preloader
+/usr/bin/wineboot
+/usr/bin/winebuild
+/usr/bin/winecfg
+/usr/bin/wineconsole
+/usr/bin/winecpp
+/usr/bin/winedbg
+/usr/bin/winedump
+/usr/bin/winefile
+/usr/bin/wineg++
+/usr/bin/winegcc
+/usr/bin/winemaker
+/usr/bin/winemine
+/usr/bin/winepath
+/usr/bin/wineserver
+/usr/bin/winicontoppm
+/usr/bin/wish
+/usr/bin/wish8.5
+/usr/bin/wmc
+/usr/bin/wmf2eps
+/usr/bin/wmf2fig
+/usr/bin/wmf2svg
+/usr/bin/wmf2x
+/usr/bin/wnck-urgency-monitor
+/usr/bin/wnckprop
+/usr/bin/word-list-compress
+/usr/bin/wordforms
+/usr/bin/wordlist2hunspell
+/usr/bin/wpd2html
+/usr/bin/wpd2html-0.9
+/usr/bin/wpd2raw
+/usr/bin/wpd2raw-0.9
+/usr/bin/wpd2text
+/usr/bin/wpd2text-0.9
+/usr/bin/wpg2raw
+/usr/bin/wpg2raw-0.2
+/usr/bin/wpg2svg
+/usr/bin/wpg2svg-0.2
+/usr/bin/wpg2svgbatch.pl
+/usr/bin/wpg2svgbatch.pl-0.2
+/usr/bin/wps2html
+/usr/bin/wps2raw
+/usr/bin/wps2text
+/usr/bin/wrc
+/usr/bin/write
+/usr/bin/wrjpgcom
+/usr/bin/wsgen
+/usr/bin/wsimport
+/usr/bin/wtpt
+/usr/bin/wvgain
+/usr/bin/wvunpack
+/usr/bin/x11-ssh-askpass
+/usr/bin/x11perf
+/usr/bin/x11perfcomp
+/usr/bin/x86_64
+/usr/bin/x86_64-pc-linux-gnu-addr2line
+/usr/bin/x86_64-pc-linux-gnu-aot-compile
+/usr/bin/x86_64-pc-linux-gnu-ar
+/usr/bin/x86_64-pc-linux-gnu-as
+/usr/bin/x86_64-pc-linux-gnu-c++
+/usr/bin/x86_64-pc-linux-gnu-c++-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-c++filt
+/usr/bin/x86_64-pc-linux-gnu-cpp
+/usr/bin/x86_64-pc-linux-gnu-cpp-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-elfedit
+/usr/bin/x86_64-pc-linux-gnu-g++
+/usr/bin/x86_64-pc-linux-gnu-g++-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gappletviewer
+/usr/bin/x86_64-pc-linux-gnu-gc-analyze
+/usr/bin/x86_64-pc-linux-gnu-gcc
+/usr/bin/x86_64-pc-linux-gnu-gcc-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gcc-ar
+/usr/bin/x86_64-pc-linux-gnu-gcc-nm
+/usr/bin/x86_64-pc-linux-gnu-gcc-ranlib
+/usr/bin/x86_64-pc-linux-gnu-gcj
+/usr/bin/x86_64-pc-linux-gnu-gcj-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gcj-dbtool
+/usr/bin/x86_64-pc-linux-gnu-gcjh
+/usr/bin/x86_64-pc-linux-gnu-gcjh-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gcov
+/usr/bin/x86_64-pc-linux-gnu-gcov-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gfortran
+/usr/bin/x86_64-pc-linux-gnu-gfortran-4.7.3
+/usr/bin/x86_64-pc-linux-gnu-gij
+/usr/bin/x86_64-pc-linux-gnu-gjar
+/usr/bin/x86_64-pc-linux-gnu-gjarsigner
+/usr/bin/x86_64-pc-linux-gnu-gjavah
+/usr/bin/x86_64-pc-linux-gnu-gkeytool
+/usr/bin/x86_64-pc-linux-gnu-gnative2ascii
+/usr/bin/x86_64-pc-linux-gnu-gorbd
+/usr/bin/x86_64-pc-linux-gnu-gprof
+/usr/bin/x86_64-pc-linux-gnu-grmic
+/usr/bin/x86_64-pc-linux-gnu-grmid
+/usr/bin/x86_64-pc-linux-gnu-grmiregistry
+/usr/bin/x86_64-pc-linux-gnu-gserialver
+/usr/bin/x86_64-pc-linux-gnu-gtnameserv
+/usr/bin/x86_64-pc-linux-gnu-jcf-dump
+/usr/bin/x86_64-pc-linux-gnu-jv-convert
+/usr/bin/x86_64-pc-linux-gnu-ld
+/usr/bin/x86_64-pc-linux-gnu-ld.bfd
+/usr/bin/x86_64-pc-linux-gnu-ld.gold
+/usr/bin/x86_64-pc-linux-gnu-nm
+/usr/bin/x86_64-pc-linux-gnu-objcopy
+/usr/bin/x86_64-pc-linux-gnu-objdump
+/usr/bin/x86_64-pc-linux-gnu-pkg-config
+/usr/bin/x86_64-pc-linux-gnu-ranlib
+/usr/bin/x86_64-pc-linux-gnu-readelf
+/usr/bin/x86_64-pc-linux-gnu-rebuild-gcj-db
+/usr/bin/x86_64-pc-linux-gnu-size
+/usr/bin/x86_64-pc-linux-gnu-strings
+/usr/bin/x86_64-pc-linux-gnu-strip
+/usr/bin/xargs
+/usr/bin/xauth
+/usr/bin/xbacklight
+/usr/bin/xbm2xface
+/usr/bin/xbmtopbm
+/usr/bin/xclock
+/usr/bin/xcmap
+/usr/bin/xcmsdb
+/usr/bin/xconsole
+/usr/bin/xcursorgen
+/usr/bin/xdg-desktop-icon
+/usr/bin/xdg-desktop-menu
+/usr/bin/xdg-email
+/usr/bin/xdg-icon-resource
+/usr/bin/xdg-mime
+/usr/bin/xdg-open
+/usr/bin/xdg-screensaver
+/usr/bin/xdg-settings
+/usr/bin/xdg-user-dir
+/usr/bin/xdg-user-dirs-gtk-update
+/usr/bin/xdg-user-dirs-update
+/usr/bin/xdm
+/usr/bin/xdpr
+/usr/bin/xdpyinfo
+/usr/bin/xdriinfo
+/usr/bin/xemacs
+/usr/bin/xemacs-21.4.22
+/usr/bin/xemacs-21.4.22-52a59a45.dmp
+/usr/bin/xev
+/usr/bin/xfd
+/usr/bin/xfig
+/usr/bin/xfontsel
+/usr/bin/xgamma
+/usr/bin/xgettext
+/usr/bin/xhost
+/usr/bin/ximtoppm
+/usr/bin/xinit
+/usr/bin/xinput
+/usr/bin/xjc
+/usr/bin/xkbbell
+/usr/bin/xkbcomp
+/usr/bin/xkbevd
+/usr/bin/xkbvleds
+/usr/bin/xkbwatch
+/usr/bin/xkill
+/usr/bin/xloadimage
+/usr/bin/xlsatoms
+/usr/bin/xlsclients
+/usr/bin/xlsfonts
+/usr/bin/xmbind
+/usr/bin/xmessage
+/usr/bin/xmkmf
+/usr/bin/xml2-config
+/usr/bin/xml2po
+/usr/bin/xmlcatalog
+/usr/bin/xmllint
+/usr/bin/xmlwf
+/usr/bin/xmodmap
+/usr/bin/xpmroot
+/usr/bin/xpmtoppm
+/usr/bin/xpr
+/usr/bin/xprop
+/usr/bin/xrandr
+/usr/bin/xrdb
+/usr/bin/xrefresh
+/usr/bin/xscreensaver
+/usr/bin/xscreensaver-command
+/usr/bin/xscreensaver-demo
+/usr/bin/xscreensaver-getimage
+/usr/bin/xscreensaver-getimage-file
+/usr/bin/xscreensaver-getimage-video
+/usr/bin/xscreensaver-gl-helper
+/usr/bin/xscreensaver-text
+/usr/bin/xset
+/usr/bin/xsetbg
+/usr/bin/xsetroot
+/usr/bin/xslt-config
+/usr/bin/xsltproc
+/usr/bin/xsm
+/usr/bin/xspim
+/usr/bin/xsubpp
+/usr/bin/xsubpp-2.210.0-perl-5.12.4
+/usr/bin/xsubpp-3.180.0-ExtUtils-ParseXS-3.180.0
+/usr/bin/xterm
+/usr/bin/xtotroff
+/usr/bin/xtrace
+/usr/bin/xv
+/usr/bin/xview
+/usr/bin/xvinfo
+/usr/bin/xvminitoppm
+/usr/bin/xvpictoppm
+/usr/bin/xwd
+/usr/bin/xwdtopnm
+/usr/bin/xwininfo
+/usr/bin/xwud
+/usr/bin/xxd
+/usr/bin/xz
+/usr/bin/xzcat
+/usr/bin/xzcmp
+/usr/bin/xzdec
+/usr/bin/xzdiff
+/usr/bin/xzegrep
+/usr/bin/xzfgrep
+/usr/bin/xzgrep
+/usr/bin/xzless
+/usr/bin/xzmore
+/usr/bin/y4mblack
+/usr/bin/y4mcolorbars
+/usr/bin/y4mdenoise
+/usr/bin/y4mhist
+/usr/bin/y4minterlace
+/usr/bin/y4mivtc
+/usr/bin/y4mscaler
+/usr/bin/y4mshift
+/usr/bin/y4mspatialfilter
+/usr/bin/y4mstabilizer
+/usr/bin/y4mtopnm
+/usr/bin/y4mtoppm
+/usr/bin/y4mtoqt
+/usr/bin/y4mtoyuv
+/usr/bin/y4munsharp
+/usr/bin/yacc
+/usr/bin/yacc.bison
+/usr/bin/yasm
+/usr/bin/ybmtopbm
+/usr/bin/yelp
+/usr/bin/yes
+/usr/bin/ypcat
+/usr/bin/ypchfn
+/usr/bin/ypchsh
+/usr/bin/ypdomainname
+/usr/bin/ypipe
+/usr/bin/ypmatch
+/usr/bin/yppasswd
+/usr/bin/ypwhich
+/usr/bin/ytasm
+/usr/bin/yuv2lav
+/usr/bin/yuv4mpeg
+/usr/bin/yuvcorrect
+/usr/bin/yuvcorrect_tune
+/usr/bin/yuvdeinterlace
+/usr/bin/yuvdenoise
+/usr/bin/yuvfps
+/usr/bin/yuvinactive
+/usr/bin/yuvkineco
+/usr/bin/yuvmedianfilter
+/usr/bin/yuvplay
+/usr/bin/yuvscaler
+/usr/bin/yuvsplittoppm
+/usr/bin/yuvtoppm
+/usr/bin/yuvycsnoise
+/usr/bin/yuyvtoy4m
+/usr/bin/zcmp
+/usr/bin/zdiff
+/usr/bin/zegrep
+/usr/bin/zeisstopnm
+/usr/bin/zenity
+/usr/bin/zfgrep
+/usr/bin/zforce
+/usr/bin/zgrep
+/usr/bin/zip
+/usr/bin/zipcloak
+/usr/bin/zipdetails
+/usr/bin/zipdetails-2.60.0-IO-Compress-2.60.0
+/usr/bin/zipgrep
+/usr/bin/zipinfo
+/usr/bin/zipnote
+/usr/bin/zipsplit
+/usr/bin/zless
+/usr/bin/zmore
+/usr/bin/znew
+==2283== Invalid read of size 8
+==2283==    at 0x404E04: Command::clear() (command.cc:178)
+==2283==    by 0x405711: Command::execute() (command.cc:408)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x404DCC: Command::clear() (command.cc:179)
+==2283==    by 0x405711: Command::execute() (command.cc:408)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+==2283== Invalid read of size 8
+==2283==    at 0x404E29: Command::clear() (command.cc:182)
+==2283==    by 0x405711: Command::execute() (command.cc:408)
+==2283==    by 0x403BC1: yyparse() (shell.y:54)
+==2283==    by 0x405867: main (command.cc:451)
+==2283==  Address 0x59f2040 is 0 bytes after a block of size 0 alloc'd
+==2283==    at 0x4C2C71B: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==2283==    by 0x404C94: Command::Command() (command.cc:146)
+==2283==    by 0x40589F: __static_initialization_and_destruction_0(int, int) (command.cc:433)
+==2283==    by 0x4058B4: _GLOBAL__sub_I__ZN13SimpleCommandC2Ev (command.cc:452)
+==2283==    by 0x40592C: __libc_csu_init (in /u/data/u93/skayyali/cs252/lab3/lab3-src/shell)
+==2283==    by 0x566F944: (below main) (in /lib64/libc-2.16.so)
+==2283== 
+myshell>==2283== 
+==2283== HEAP SUMMARY:
+==2283==     in use at exit: 82,100 bytes in 2,944 blocks
+==2283==   total heap usage: 5,875 allocs, 2,931 frees, 263,334 bytes allocated
+==2283== 
+==2283== LEAK SUMMARY:
+==2283==    definitely lost: 52,194 bytes in 2,812 blocks
+==2283==    indirectly lost: 13,368 bytes in 124 blocks
+==2283==      possibly lost: 0 bytes in 0 blocks
+==2283==    still reachable: 16,538 bytes in 8 blocks
+==2283==         suppressed: 0 bytes in 0 blocks
+==2283== Rerun with --leak-check=full to see details of leaked memory
+==2283== 
+==2283== For counts of detected and suppressed errors, rerun with: -v
+==2283== ERROR SUMMARY: 19604 errors from 42 contexts (suppressed: 2 from 2)

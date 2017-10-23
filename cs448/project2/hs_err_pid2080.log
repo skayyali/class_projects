@@ -1,0 +1,453 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create GC thread. Out of system resources.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (gcTaskThread.cpp:48), pid=2080, tid=140393018717952
+#
+# JRE version:  (8.0_66-b17) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.66-b17 mixed mode linux-amd64 compressed oops)
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007fafc4007800):  JavaThread "Unknown thread" [_thread_in_vm, id=2084, stack(0x00007fafcbf27000,0x00007fafcc028000)]
+
+Stack: [0x00007fafcbf27000,0x00007fafcc028000],  sp=0x00007fafcc0265e0,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xab9a1a]  VMError::report_and_die()+0x2ba
+V  [libjvm.so+0x4f9e0b]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*)+0x8b
+V  [libjvm.so+0x5d37bf]  GCTaskThread::GCTaskThread(GCTaskManager*, unsigned int, unsigned int)+0x15f
+V  [libjvm.so+0x5d257b]  GCTaskManager::initialize()+0x3ab
+V  [libjvm.so+0x93dd3d]  ParallelScavengeHeap::initialize()+0x34d
+V  [libjvm.so+0xa8224b]  Universe::initialize_heap()+0xfb
+V  [libjvm.so+0xa825be]  universe_init()+0x3e
+V  [libjvm.so+0x6388f5]  init_globals()+0x65
+V  [libjvm.so+0xa667be]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x23e
+V  [libjvm.so+0x6cce14]  JNI_CreateJavaVM+0x74
+C  [libjli.so+0x745e]  JavaMain+0x9e
+C  [libpthread.so.0+0x7324]  start_thread+0xc4
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00007fafc4007800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=2084, stack(0x00007fafcbf27000,0x00007fafcc028000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:07 545192                             /usr/opt/oracle-jdk-bin-1.8.0.66/bin/javac
+00600000-00601000 rw-p 00000000 08:07 545192                             /usr/opt/oracle-jdk-bin-1.8.0.66/bin/javac
+00795000-007b6000 rw-p 00000000 00:00 0                                  [heap]
+6c7000000-6c7580000 rw-p 00000000 00:00 0 
+6c7580000-76d000000 ---p 00000000 00:00 0 
+76d000000-76d280000 rw-p 00000000 00:00 0 
+76d280000-7c0000000 ---p 00000000 00:00 0 
+7fafb5000000-7fafb5270000 rwxp 00000000 00:00 0 
+7fafb5270000-7fafc4000000 ---p 00000000 00:00 0 
+7fafc4000000-7fafc4038000 rw-p 00000000 00:00 0 
+7fafc4038000-7fafc8000000 ---p 00000000 00:00 0 
+7fafc83ef000-7fafc8674000 rw-p 00000000 00:00 0 
+7fafc8674000-7fafc8675000 ---p 00000000 00:00 0 
+7fafc8675000-7fafc8775000 rw-p 00000000 00:00 0 
+7fafc8775000-7fafc8776000 ---p 00000000 00:00 0 
+7fafc8776000-7fafc8879000 rw-p 00000000 00:00 0                          [stack:2085]
+7fafc8879000-7fafc8da6000 ---p 00000000 00:00 0 
+7fafc8da6000-7fafc8da9000 rw-p 00000000 00:00 0 
+7fafc8da9000-7fafc92d6000 ---p 00000000 00:00 0 
+7fafc92d6000-7fafc92d8000 rw-p 00000000 00:00 0 
+7fafc92d8000-7fafc956e000 ---p 00000000 00:00 0 
+7fafc956e000-7fafc9579000 rw-p 00000000 00:00 0 
+7fafc9579000-7fafc992f000 ---p 00000000 00:00 0 
+7fafc992f000-7fafc9949000 r-xp 00000000 08:07 545029                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libzip.so
+7fafc9949000-7fafc9b49000 ---p 0001a000 08:07 545029                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libzip.so
+7fafc9b49000-7fafc9b4a000 rw-p 0001a000 08:07 545029                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libzip.so
+7fafc9b4a000-7fafc9b74000 r-xp 00000000 08:07 545046                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libjava.so
+7fafc9b74000-7fafc9d74000 ---p 0002a000 08:07 545046                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libjava.so
+7fafc9d74000-7fafc9d76000 rw-p 0002a000 08:07 545046                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libjava.so
+7fafc9d76000-7fafc9d83000 r-xp 00000000 08:07 545038                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libverify.so
+7fafc9d83000-7fafc9f83000 ---p 0000d000 08:07 545038                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libverify.so
+7fafc9f83000-7fafc9f85000 rw-p 0000d000 08:07 545038                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/libverify.so
+7fafc9f85000-7fafc9f8b000 r-xp 00000000 08:02 347                        /lib64/librt-2.21.so
+7fafc9f8b000-7fafca18b000 ---p 00006000 08:02 347                        /lib64/librt-2.21.so
+7fafca18b000-7fafca18c000 r--p 00006000 08:02 347                        /lib64/librt-2.21.so
+7fafca18c000-7fafca18d000 rw-p 00007000 08:02 347                        /lib64/librt-2.21.so
+7fafca18d000-7fafca288000 r-xp 00000000 08:02 295                        /lib64/libm-2.21.so
+7fafca288000-7fafca487000 ---p 000fb000 08:02 295                        /lib64/libm-2.21.so
+7fafca487000-7fafca488000 r--p 000fa000 08:02 295                        /lib64/libm-2.21.so
+7fafca488000-7fafca489000 rw-p 000fb000 08:02 295                        /lib64/libm-2.21.so
+7fafca489000-7fafcb147000 r-xp 00000000 08:07 545026                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/server/libjvm.so
+7fafcb147000-7fafcb346000 ---p 00cbe000 08:07 545026                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/server/libjvm.so
+7fafcb346000-7fafcb41f000 rw-p 00cbd000 08:07 545026                     /usr/opt/oracle-jdk-bin-1.8.0.66/jre/lib/amd64/server/libjvm.so
+7fafcb41f000-7fafcb463000 rw-p 00000000 00:00 0 
+7fafcb463000-7fafcb5fa000 r-xp 00000000 08:02 308                        /lib64/libc-2.21.so
+7fafcb5fa000-7fafcb7f9000 ---p 00197000 08:02 308                        /lib64/libc-2.21.so
+7fafcb7f9000-7fafcb7fd000 r--p 00196000 08:02 308                        /lib64/libc-2.21.so
+7fafcb7fd000-7fafcb7ff000 rw-p 0019a000 08:02 308                        /lib64/libc-2.21.so
+7fafcb7ff000-7fafcb803000 rw-p 00000000 00:00 0 
+7fafcb803000-7fafcb805000 r-xp 00000000 08:02 664                        /lib64/libdl-2.21.so
+7fafcb805000-7fafcba05000 ---p 00002000 08:02 664                        /lib64/libdl-2.21.so
+7fafcba05000-7fafcba06000 r--p 00002000 08:02 664                        /lib64/libdl-2.21.so
+7fafcba06000-7fafcba07000 rw-p 00003000 08:02 664                        /lib64/libdl-2.21.so
+7fafcba07000-7fafcba1c000 r-xp 00000000 08:07 544167                     /usr/opt/oracle-jdk-bin-1.8.0.66/lib/amd64/jli/libjli.so
+7fafcba1c000-7fafcbc1c000 ---p 00015000 08:07 544167                     /usr/opt/oracle-jdk-bin-1.8.0.66/lib/amd64/jli/libjli.so
+7fafcbc1c000-7fafcbc1d000 rw-p 00015000 08:07 544167                     /usr/opt/oracle-jdk-bin-1.8.0.66/lib/amd64/jli/libjli.so
+7fafcbc1d000-7fafcbc34000 r-xp 00000000 08:02 348                        /lib64/libpthread-2.21.so
+7fafcbc34000-7fafcbe33000 ---p 00017000 08:02 348                        /lib64/libpthread-2.21.so
+7fafcbe33000-7fafcbe34000 r--p 00016000 08:02 348                        /lib64/libpthread-2.21.so
+7fafcbe34000-7fafcbe35000 rw-p 00017000 08:02 348                        /lib64/libpthread-2.21.so
+7fafcbe35000-7fafcbe39000 rw-p 00000000 00:00 0 
+7fafcbe39000-7fafcbe5b000 r-xp 00000000 08:02 681                        /lib64/ld-2.21.so
+7fafcbef2000-7fafcbf27000 r--s 00000000 08:05 970                        /var/run/nscd/dbEiooiN (deleted)
+7fafcbf27000-7fafcbf2a000 ---p 00000000 00:00 0 
+7fafcbf2a000-7fafcc02c000 rw-p 00000000 00:00 0                          [stack:2084]
+7fafcc04c000-7fafcc04f000 rw-p 00000000 00:00 0 
+7fafcc04f000-7fafcc057000 rw-s 00000000 00:12 3797193                    /tmp/hsperfdata_skayyali/2080
+7fafcc057000-7fafcc058000 rw-p 00000000 00:00 0 
+7fafcc058000-7fafcc059000 r--p 00000000 00:00 0 
+7fafcc059000-7fafcc05a000 rw-p 00000000 00:00 0 
+7fafcc05a000-7fafcc05b000 r--p 00021000 08:02 681                        /lib64/ld-2.21.so
+7fafcc05b000-7fafcc05c000 rw-p 00022000 08:02 681                        /lib64/ld-2.21.so
+7fafcc05c000-7fafcc05d000 rw-p 00000000 00:00 0 
+7ffcb75a3000-7ffcb75c4000 rw-p 00000000 00:00 0                          [stack]
+7ffcb75ee000-7ffcb75f0000 r--p 00000000 00:00 0                          [vvar]
+7ffcb75f0000-7ffcb75f2000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Dapplication.home=/usr/opt/oracle-jdk-bin-1.8.0.66 -Xms8m 
+java_command: com.sun.tools.javac.Main -cp .:..:lib/heapAssign.jar -d bin src/heap/HeapFile.java src/heap/HeapScan.java src/heap/Tuple.java src/tests/HFTest.java src/tests/TestDriver.java
+java_class_path (initial): /usr/opt/oracle-jdk-bin-1.8.0.66/lib/tools.jar:/usr/opt/oracle-jdk-bin-1.8.0.66/classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/etc/java-config-2/current-system-vm
+PATH=/p/oracle12c:/homes/skayyali/bin/.amd64-linux:/homes/skayyali/bin:/usr/local/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/x86_64-pc-linux-gnu/gcc-bin/4.9.3:/usr/games/bin:.:/p/android-sdk/bin:/p/android-sdk/tools:/p/android-sdk/tools:/p/android-sdk/platform-tools:/p/xinu/bin
+LD_LIBRARY_PATH=/p/oracle12c:
+SHELL=/usr/local/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xaba2a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xaba2a0], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x917710], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x917710], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x917710], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x917710], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x918d40], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Gentoo Base System release 2.2
+
+uname:Linux 4.3.3 #2 SMP Wed Jan 6 16:46:12 EST 2016 x86_64
+libc:glibc 2.21 NPTL 2.21 
+rlimit: STACK 8192k, CORE 0k, NPROC 256, NOFILE 4096, AS infinity
+load average:0.02 0.09 0.08
+
+/proc/meminfo:
+MemTotal:       16315948 kB
+MemFree:        13085200 kB
+MemAvailable:   15293500 kB
+Buffers:           81892 kB
+Cached:          2170432 kB
+SwapCached:         3240 kB
+Active:          2418036 kB
+Inactive:         609712 kB
+Active(anon):     769644 kB
+Inactive(anon):   102620 kB
+Active(file):    1648392 kB
+Inactive(file):   507092 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      16777212 kB
+SwapFree:       16760712 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:        773468 kB
+Mapped:           229520 kB
+Shmem:             96836 kB
+Slab:             148972 kB
+SReclaimable:     112984 kB
+SUnreclaim:        35988 kB
+KernelStack:        8544 kB
+PageTables:        17476 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    24935184 kB
+Committed_AS:    5762388 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      347928 kB
+VmallocChunk:   34358947836 kB
+AnonHugePages:         0 kB
+DirectMap4k:       19024 kB
+DirectMap2M:     1976320 kB
+DirectMap1G:    15728640 kB
+
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 1000.375
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 1040.250
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 1042.750
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 923.750
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 1283.375
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 0
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 854.500
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 1
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 1002.625
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 2
+cpu cores	: 4
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 60
+model name	: Intel(R) Core(TM) i7-4790S CPU @ 3.20GHz
+stepping	: 3
+microcode	: 0x19
+cpu MHz		: 823.000
+cache size	: 8192 KB
+physical id	: 0
+siblings	: 8
+core id		: 3
+cpu cores	: 4
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm xsaveopt
+bugs		:
+bogomips	: 6385.23
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16315948k(13085200k free), swap 16777212k(16760712k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.66-b17) for linux-amd64 JRE (1.8.0_66-b17), built on Oct  6 2015 17:28:34 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Wed Feb 17 21:46:30 2016
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

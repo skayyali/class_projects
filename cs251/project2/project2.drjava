@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<drjava version="drjava-20131229-r5756">
+  <project autorefresh="false" root="" work="">
+    <createjar file=""/>
+    <source>
+      <file active="true" name="FastConvexHull.java" package="" timestamp="05-Mar-2014 19:28:31">
+        <select from="4703" to="4703"/>
+        <scroll column="1972" row="0"/>
+      </file>
+      <file name="Edge.java" package="" timestamp="24-Feb-2014 15:57:01">
+        <select from="4703" to="4703"/>
+        <scroll column="1972" row="0"/>
+      </file>
+      <file name="SlowConvexHull.java" package="" timestamp="05-Mar-2014 19:08:41">
+        <select from="4703" to="4703"/>
+        <scroll column="1972" row="0"/>
+      </file>
+      <file name="Point.java" package="" timestamp="05-Mar-2014 19:19:52">
+        <select from="4703" to="4703"/>
+        <scroll column="1972" row="0"/>
+      </file>
+      <file name="ConvexHullVisualizer.java" package="" timestamp="05-Mar-2014 19:23:25">
+        <select from="4703" to="4703"/>
+        <scroll column="1972" row="0"/>
+      </file>
+    </source>
+    <included/>
+    <excluded/>
+    <collapsed/>
+    <classpath>
+      <file absolute="false" name="stdlib.jar"/>
+    </classpath>
+    <breakpoints/>
+    <watches/>
+    <bookmarks/>
+    <preferences/>
+  </project>
+</drjava>

@@ -1,0 +1,5 @@
+Said Kayyali
+0025760691
+skayyali
+
+Everything is supposed to be working fine in the program. "pwcheck.sh" is the password check and "backup.sh" is the back up code

@@ -1,0 +1,3 @@
+DELETE FROM ProjectManager WHERE ProjId=2;
+DELETE FROM EmpProject WHERE ProjId=2;
+DELETE FROM Project WHERE ProjId=2;
